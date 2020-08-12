@@ -1,5 +1,4 @@
-# scalonico.github.io
-Sebastian Calonico
+# Sebastian Calonico
 
 Assistant Professor
 
