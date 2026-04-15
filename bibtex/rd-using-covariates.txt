@@ -1,0 +1,10 @@
+@article{calonico2019covariates,
+  author = {Calonico, Sebastian and Cattaneo, Matias D. and Farrell, Max H. and Titiunik, Rocio},
+  title = {Regression Discontinuity Designs Using Covariates},
+  journal = {Review of Economics and Statistics},
+  year = {2019},
+  volume = {101},
+  number = {3},
+  pages = {442--451},
+  doi = {10.1162/rest_a_00760}
+}

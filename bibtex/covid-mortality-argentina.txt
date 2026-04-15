@@ -1,0 +1,10 @@
+@article{calonico2024covid,
+  author = {Calonico, Sebastian and Lopez Del Valle, Juan Cruz and Di Tella, Rafael},
+  title = {Risk Factors for COVID-19 In-Hospital Mortality in Argentina: A Competing Risk Survival Analysis},
+  journal = {PLOS Global Public Health},
+  year = {2024},
+  volume = {4},
+  number = {1},
+  pages = {e0000816},
+  doi = {10.1371/journal.pgph.0000816}
+}

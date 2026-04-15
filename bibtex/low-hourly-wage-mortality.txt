@@ -1,0 +1,10 @@
+@article{kezios2023lowwage,
+  author = {Kezios, Katrina L. and Lu, Peiyi and Calonico, Sebastian and Zeki Al Hazzouri, Adina},
+  title = {History of Low Hourly Wage and All-Cause Mortality Among Middle-aged Workers},
+  journal = {JAMA},
+  year = {2023},
+  volume = {329},
+  number = {7},
+  pages = {561--573},
+  doi = {10.1001/jama.2023.0367}
+}

@@ -1,0 +1,10 @@
+@article{calonico2020optimal,
+  author = {Calonico, Sebastian and Cattaneo, Matias D. and Farrell, Max H.},
+  title = {Optimal Bandwidth Choice for Robust Bias Corrected Inference in Regression-Discontinuity Designs},
+  journal = {Econometrics Journal},
+  year = {2020},
+  volume = {23},
+  number = {2},
+  pages = {192--210},
+  doi = {10.1093/ectj/utz022}
+}

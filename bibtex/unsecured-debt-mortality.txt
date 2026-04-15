@@ -1,0 +1,10 @@
+@article{swift2025debt,
+  author = {Swift, Samuel L. and Chen, Zihan and Colvin, Calvin and Kezios, Katrina and Calonico, Sebastian and Zeki Al Hazzouri, Adina},
+  title = {Unsecured Debt in Early Adulthood and Premature Mortality in Adults in the USA: A Longitudinal Analysis of Prospective National Cohort Data},
+  journal = {The Lancet Public Health},
+  year = {2025},
+  volume = {10},
+  number = {11},
+  pages = {e979--e987},
+  doi = {10.1016/S2468-2667(25)00226-9}
+}

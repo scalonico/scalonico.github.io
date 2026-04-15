@@ -1,0 +1,10 @@
+@article{calonico2017women,
+  author = {Calonico, Sebastian and Smith, Jeffrey A.},
+  title = {The Women of the National Supported Work Demonstration},
+  journal = {Journal of Labor Economics},
+  year = {2017},
+  volume = {35},
+  number = {S1},
+  pages = {S65--S97},
+  doi = {10.1086/692397}
+}

@@ -1,0 +1,9 @@
+@article{calonico2024rdhealth,
+  author = {Calonico, Sebastian and Jawadekar, Neal and Kezios, Katrina and Zeki Al Hazzouri, Adina},
+  title = {Regression Discontinuity Design Studies: A Guide for Health Researchers},
+  journal = {BMJ},
+  year = {2024},
+  volume = {384},
+  pages = {e072254},
+  doi = {10.1136/bmj-2022-072254}
+}

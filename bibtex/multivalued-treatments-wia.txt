@@ -1,0 +1,10 @@
+@article{ao2021multivalued,
+  author = {Ao, Wallice and Calonico, Sebastian and Lee, Ying-Ying},
+  title = {Multivalued Treatments and Decomposition Analysis: An Application to the WIA Program},
+  journal = {Journal of Business and Economic Statistics},
+  year = {2021},
+  volume = {39},
+  number = {1},
+  pages = {358--371},
+  doi = {10.1080/07350015.2019.1660664}
+}

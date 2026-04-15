@@ -1,0 +1,10 @@
+@article{calonico2018bias,
+  author = {Calonico, Sebastian and Cattaneo, Matias D. and Farrell, Max H.},
+  title = {On the Effect of Bias Estimation on Coverage Accuracy in Nonparametric Inference},
+  journal = {Journal of the American Statistical Association},
+  year = {2018},
+  volume = {113},
+  number = {522},
+  pages = {767--779},
+  doi = {10.1080/01621459.2017.1285776}
+}

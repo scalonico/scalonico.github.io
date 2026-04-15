@@ -1,0 +1,10 @@
+@article{calonico2022coverage,
+  author = {Calonico, Sebastian and Cattaneo, Matias D. and Farrell, Max H.},
+  title = {Coverage Error Optimal Confidence Intervals for Local Polynomial Regression},
+  journal = {Bernoulli},
+  year = {2022},
+  volume = {28},
+  number = {4},
+  pages = {2998--3022},
+  doi = {10.3150/21-BEJ1445}
+}

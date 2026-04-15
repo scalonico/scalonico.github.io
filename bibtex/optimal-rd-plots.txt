@@ -1,0 +1,10 @@
+@article{calonico2015plots,
+  author = {Calonico, Sebastian and Cattaneo, Matias D. and Titiunik, Rocio},
+  title = {Optimal Data-Driven Regression Discontinuity Plots},
+  journal = {Journal of the American Statistical Association},
+  year = {2015},
+  volume = {110},
+  number = {512},
+  pages = {1753--1769},
+  doi = {10.1080/01621459.2015.1017578}
+}

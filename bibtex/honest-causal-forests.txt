@@ -1,0 +1,10 @@
+@article{jawadekar2023honest,
+  author = {Jawadekar, Neal and Kezios, Katrina and Odden, Michelle C. and Stingone, Jeanette A. and Calonico, Sebastian and Rudolph, Kara and Zeki Al Hazzouri, Adina},
+  title = {Practical Guide to Honest Causal Forests for Identifying Heterogeneous Treatment Effects},
+  journal = {American Journal of Epidemiology},
+  year = {2023},
+  volume = {192},
+  number = {7},
+  pages = {1155--1165},
+  doi = {10.1093/aje/kwad043}
+}
