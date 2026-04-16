@@ -8,6 +8,13 @@
       name="description"
       content="Sebastian Calonico is an econometrician and Assistant Professor at the UC Davis Graduate School of Management."
     />
+    <meta name="theme-color" content="#f3ecdf" />
+    <meta property="og:title" content="Sebastian Calonico" />
+    <meta
+      property="og:description"
+      content="Research, publications, teaching, and software by Sebastian Calonico."
+    />
+    <meta property="og:type" content="website" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,9 +25,19 @@
   </head>
   <body>
     <div class="page-shell">
+      <a class="skip-link" href="#main-content">Skip to content</a>
       <header class="site-header">
         <a class="site-mark" href="#top">SC</a>
-        <nav class="site-nav" aria-label="Primary">
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Toggle navigation"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary" data-open="false">
           <a href="#about">About</a>
           <a href="#publications">Publications</a>
           <a href="#working-papers">Current Research</a>
@@ -30,11 +47,15 @@
         </nav>
       </header>
 
-      <main id="top">
+      <div id="top">
         <section class="hero">
           <div class="hero-copy">
             <p class="eyebrow">Econometrics / Causal Inference / Data Analytics</p>
             <h1>Sebastian Calonico</h1>
+            <div class="hero-affiliation">
+              <p>Assistant Professor of Business Analytics</p>
+              <p>University of California, Davis</p>
+            </div>
             <p class="hero-lede">
               Assistant Professor at the UC Davis Graduate School of Management,
               developing causal inference and data analytics tools for rigorous
@@ -56,25 +77,28 @@
           </aside>
         </section>
 
-        <section class="section intro-grid" id="about">
-          <p class="section-kicker">About</p>
-          <div class="intro-copy">
-            <p>
-              I am an econometrician whose research focuses on causal inference,
-              nonparametric methods, and data analytics, with an emphasis on
-              practical tools for empirical research.
-            </p>
-            <p>
-              This site highlights recent publications, current research, and
-              software contributions. For a full record of papers,
-              appointments, grants, and teaching, see my CV.
-            </p>
-          </div>
-        </section>
+        <main id="main-content">
+          <section class="section intro-grid" id="about">
+            <p class="section-kicker">About</p>
+            <div class="intro-copy">
+              <p>
+                I am an econometrician whose research focuses on causal
+                inference, nonparametric methods, and data analytics, with an
+                emphasis on practical tools for empirical research. My work
+                spans econometric theory, software for applied researchers, and
+                collaborations in health and social policy, with the goal of
+                making modern empirical methods both statistically rigorous and
+                practically usable. This site highlights selected publications,
+                ongoing projects, teaching, and software. For a full record of
+                papers, appointments, grants, and advising, see my CV.
+              </p>
+            </div>
+          </section>
 
-        <section class="section" id="profile">
+          <section class="section" id="profile">
           <div class="profile-grid">
             <article class="timeline-card">
+              <h3>Appointments</h3>
               <div class="timeline-list">
                 <div class="timeline-item">
                   <p class="paper-year">2024 - Present</p>
@@ -84,7 +108,7 @@
                 <div class="timeline-item">
                   <p class="paper-year">2019 - 2024</p>
                   <h4>Columbia University</h4>
-                  <p>Assistant Professor, Department of Health Policy &amp; Management, with affiliations in the Data Science Institute, Institute for Latin American Studies, and Population Research Center.</p>
+                  <p>Assistant Professor, Department of Health Policy &amp; Management.</p>
                 </div>
                 <div class="timeline-item">
                   <p class="paper-year">2014 - 2019</p>
@@ -120,17 +144,36 @@
             <article class="highlight-card">
               <p class="section-kicker">Active Grants</p>
               <h3>Research support and collaboration</h3>
-              <p>Current externally funded projects include work on Alzheimer&apos;s disease, dementia risk, blood pressure targets, and modern causal inference methods, including multiple active NIA-supported grants.</p>
+              <p>
+                Current externally funded projects include work on
+                Alzheimer&apos;s disease, dementia risk, blood pressure targets,
+                and modern causal inference methods, including multiple active
+                NIA-supported grants.
+              </p>
               <ul class="compact-list">
                 <li>Multiple PI on R01AG085481, 2024 - 2029.</li>
                 <li>Multiple PI on R01AG081973, 2024 - 2027.</li>
                 <li>Co-Investigator on additional NIA-supported projects spanning 2021 - 2027.</li>
               </ul>
             </article>
+            <article class="highlight-card">
+              <p class="section-kicker">Research Focus</p>
+              <h3>Methods, software, and applied collaboration</h3>
+              <p>
+                Recent work centers on regression discontinuity designs,
+                nonparametric inference, treatment-effect heterogeneity, and the
+                use of causal methods in health and policy settings.
+              </p>
+              <ul class="compact-list">
+                <li>Econometric theory for credible inference in observational settings.</li>
+                <li>Software packages that lower barriers to using advanced methods.</li>
+                <li>Applied collaborations in public health, labor, and social policy.</li>
+              </ul>
+            </article>
           </div>
-        </section>
+          </section>
 
-        <section class="section" id="publications">
+          <section class="section" id="publications">
           <div class="section-heading">
             <div>
               <p class="section-kicker">Selected Publications</p>
@@ -146,37 +189,37 @@
                 <article class="paper-card">
                   <p class="paper-year">2022</p>
                   <h4><a class="paper-title-link" href="https://rdpackages.github.io/references/Calonico-Cattaneo-Farrell_2022_Bernoulli.pdf" target="_blank" rel="noopener noreferrer">Coverage Error Optimal Confidence Intervals for Local Polynomial Regression</a></h4>
-                  <p class="paper-details"><span>with Matias Cattaneo and Max Farrell</span><span>Bernoulli</span><a class="bibtex-link" href="./bibtex/coverage-error-optimal-confidence-intervals.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with <a class="coauthor-link" href="https://cattaneo.princeton.edu/" target="_blank" rel="noopener noreferrer">Matias Cattaneo</a> and <a class="coauthor-link" href="https://maxhfarrell.com/" target="_blank" rel="noopener noreferrer">Max Farrell</a></span><span>Bernoulli</span><a class="bibtex-link" href="./bibtex/coverage-error-optimal-confidence-intervals.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
                 <article class="paper-card">
                   <p class="paper-year">2021</p>
                   <h4><a class="paper-title-link" href="https://www.tandfonline.com/doi/full/10.1080/07350015.2019.1660664" target="_blank" rel="noopener noreferrer">Multivalued Treatments and Decomposition Analysis: An Application to the WIA Program</a></h4>
-                  <p class="paper-details"><span>with Wallice Ao and Ying-Ying Lee</span><span>Journal of Business &amp; Economic Statistics</span><a class="bibtex-link" href="./bibtex/multivalued-treatments-wia.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with Wallice Ao and <a class="coauthor-link" href="https://sites.google.com/site/yyleelilian/" target="_blank" rel="noopener noreferrer">Ying-Ying Lee</a></span><span>Journal of Business &amp; Economic Statistics</span><a class="bibtex-link" href="./bibtex/multivalued-treatments-wia.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
                 <article class="paper-card">
                   <p class="paper-year">2020</p>
                   <h4><a class="paper-title-link" href="https://rdpackages.github.io/references/Calonico-Cattaneo-Farrell_2020_ECTJ.pdf" target="_blank" rel="noopener noreferrer">Optimal Bandwidth Choice for Robust Bias Corrected Inference in Regression-Discontinuity Designs</a></h4>
-                  <p class="paper-details"><span>with Matias Cattaneo and Max Farrell</span><span>Econometrics Journal</span><a class="bibtex-link" href="./bibtex/optimal-bandwidth-rd.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with <a class="coauthor-link" href="https://cattaneo.princeton.edu/" target="_blank" rel="noopener noreferrer">Matias Cattaneo</a> and <a class="coauthor-link" href="https://maxhfarrell.com/" target="_blank" rel="noopener noreferrer">Max Farrell</a></span><span>Econometrics Journal</span><a class="bibtex-link" href="./bibtex/optimal-bandwidth-rd.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
                 <article class="paper-card">
                   <p class="paper-year">2019</p>
                   <h4><a class="paper-title-link" href="https://rdpackages.github.io/references/Calonico-Cattaneo-Farrell-Titiunik_2019_RESTAT.pdf" target="_blank" rel="noopener noreferrer">Regression Discontinuity Designs Using Covariates</a></h4>
-                  <p class="paper-details"><span>with Matias Cattaneo, Max Farrell, and Rocio Titiunik</span><span>Review of Economics and Statistics</span><a class="bibtex-link" href="./bibtex/rd-using-covariates.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with <a class="coauthor-link" href="https://cattaneo.princeton.edu/" target="_blank" rel="noopener noreferrer">Matias Cattaneo</a>, <a class="coauthor-link" href="https://maxhfarrell.com/" target="_blank" rel="noopener noreferrer">Max Farrell</a>, and <a class="coauthor-link" href="https://titiunik.github.io/" target="_blank" rel="noopener noreferrer">Rocio Titiunik</a></span><span>Review of Economics and Statistics</span><a class="bibtex-link" href="./bibtex/rd-using-covariates.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
                 <article class="paper-card">
                   <p class="paper-year">2018</p>
                   <h4><a class="paper-title-link" href="https://nppackages.github.io/references/Calonico-Cattaneo-Farrell_2018_JASA.pdf" target="_blank" rel="noopener noreferrer">On the Effect of Bias Estimation on Coverage Accuracy in Nonparametric Inference</a></h4>
-                  <p class="paper-details"><span>with Matias Cattaneo and Max Farrell</span><span>Journal of the American Statistical Association</span><a class="bibtex-link" href="./bibtex/bias-estimation-coverage-accuracy.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with <a class="coauthor-link" href="https://cattaneo.princeton.edu/" target="_blank" rel="noopener noreferrer">Matias Cattaneo</a> and <a class="coauthor-link" href="https://maxhfarrell.com/" target="_blank" rel="noopener noreferrer">Max Farrell</a></span><span>Journal of the American Statistical Association</span><a class="bibtex-link" href="./bibtex/bias-estimation-coverage-accuracy.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
                 <article class="paper-card">
                   <p class="paper-year">2015</p>
                   <h4><a class="paper-title-link" href="https://rdpackages.github.io/references/Calonico-Cattaneo-Titiunik_2015_JASA.pdf" target="_blank" rel="noopener noreferrer">Optimal Data-Driven Regression Discontinuity Plots</a></h4>
-                  <p class="paper-details"><span>with Matias Cattaneo and Rocio Titiunik</span><span>Journal of the American Statistical Association</span><a class="bibtex-link" href="./bibtex/optimal-rd-plots.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with <a class="coauthor-link" href="https://cattaneo.princeton.edu/" target="_blank" rel="noopener noreferrer">Matias Cattaneo</a> and <a class="coauthor-link" href="https://titiunik.github.io/" target="_blank" rel="noopener noreferrer">Rocio Titiunik</a></span><span>Journal of the American Statistical Association</span><a class="bibtex-link" href="./bibtex/optimal-rd-plots.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
                 <article class="paper-card">
                   <p class="paper-year">2014</p>
                   <h4><a class="paper-title-link" href="https://rdpackages.github.io/references/Calonico-Cattaneo-Titiunik_2014_ECMA.pdf" target="_blank" rel="noopener noreferrer">Robust Nonparametric Confidence Intervals for Regression Discontinuity Designs</a></h4>
-                  <p class="paper-details"><span>with Matias Cattaneo and Rocio Titiunik</span><span>Econometrica</span><a class="bibtex-link" href="./bibtex/robust-nonparametric-rd.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with <a class="coauthor-link" href="https://cattaneo.princeton.edu/" target="_blank" rel="noopener noreferrer">Matias Cattaneo</a> and <a class="coauthor-link" href="https://titiunik.github.io/" target="_blank" rel="noopener noreferrer">Rocio Titiunik</a></span><span>Econometrica</span><a class="bibtex-link" href="./bibtex/robust-nonparametric-rd.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
               </div>
             </article>
@@ -187,65 +230,65 @@
                 <article class="paper-card">
                   <p class="paper-year">2025</p>
                   <h4><a class="paper-title-link" href="https://www.sciencedirect.com/science/article/pii/S2468266725002269" target="_blank" rel="noopener noreferrer">Unsecured Debt in Early Adulthood and Premature Mortality in Adults in the USA</a></h4>
-                  <p class="paper-details"><span>with Swift, Chen, Colvin, Kezios, and Zeki Al Hazzouri</span><span>The Lancet Public Health</span><a class="bibtex-link" href="./bibtex/unsecured-debt-mortality.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with Swift, Chen, Colvin, Kezios, and Zeki Al Hazzouri</span><span>The Lancet Public Health</span><a class="bibtex-link" href="./bibtex/unsecured-debt-mortality.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
                 <article class="paper-card">
                   <p class="paper-year">2024</p>
                   <h4><a class="paper-title-link" href="https://www.bmj.com/content/384/bmj-2022-072254" target="_blank" rel="noopener noreferrer">Regression Discontinuity Design Studies: A Guide for Health Researchers</a></h4>
-                  <p class="paper-details"><span>with Jawadekar, Kezios, and Zeki Al Hazzouri</span><span>BMJ</span><a class="bibtex-link" href="./bibtex/rd-health-researchers.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with Jawadekar, Kezios, and Zeki Al Hazzouri</span><span>BMJ</span><a class="bibtex-link" href="./bibtex/rd-health-researchers.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
                 <article class="paper-card">
                   <p class="paper-year">2023</p>
                   <h4><a class="paper-title-link" href="https://jamanetwork.com/journals/jama/fullarticle/2801679" target="_blank" rel="noopener noreferrer">History of Low Hourly Wage and All-Cause Mortality Among Middle-aged Workers</a></h4>
-                  <p class="paper-details"><span>with Kezios, Lu, and Zeki Al Hazzouri</span><span>JAMA</span><a class="bibtex-link" href="./bibtex/low-hourly-wage-mortality.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with Kezios, Lu, and Zeki Al Hazzouri</span><span>JAMA</span><a class="bibtex-link" href="./bibtex/low-hourly-wage-mortality.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
                 <article class="paper-card">
                   <p class="paper-year">2024</p>
                   <h4><a class="paper-title-link" href="https://journals.plos.org/globalpublichealth/article?id=10.1371/journal.pgph.0000816" target="_blank" rel="noopener noreferrer">Risk Factors for COVID-19 In-Hospital Mortality: The Case of Argentina</a></h4>
-                  <p class="paper-details"><span>with Rafael Di Tella and Juan Cruz Lopez del Valle</span><span>PLOS Global Public Health</span><a class="bibtex-link" href="./bibtex/covid-mortality-argentina.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with <a class="coauthor-link" href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6448" target="_blank" rel="noopener noreferrer">Rafael Di Tella</a> and Juan Cruz Lopez del Valle</span><span>PLOS Global Public Health</span><a class="bibtex-link" href="./bibtex/covid-mortality-argentina.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
                 <article class="paper-card">
                   <p class="paper-year">2023</p>
                   <h4><a class="paper-title-link" href="https://academic.oup.com/aje/article/192/7/1155/7056288" target="_blank" rel="noopener noreferrer">Practical Guide to Honest Causal Forests for Identifying Heterogeneous Treatment Effects in a Randomized Setting</a></h4>
-                  <p class="paper-details"><span>with Jawadekar, Kezios, Odden, Stingone, Rudolph, and Zeki Al Hazzouri</span><span>American Journal of Epidemiology</span><a class="bibtex-link" href="./bibtex/honest-causal-forests.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with Jawadekar, Kezios, Odden, Stingone, Rudolph, and Zeki Al Hazzouri</span><span>American Journal of Epidemiology</span><a class="bibtex-link" href="./bibtex/honest-causal-forests.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
                 <article class="paper-card">
                   <p class="paper-year">2017</p>
                   <h4><a class="paper-title-link" href="https://www.journals.uchicago.edu/doi/full/10.1086/692397" target="_blank" rel="noopener noreferrer">The Women of the National Supported Work Demonstration</a></h4>
-                  <p class="paper-details"><span>with Jeffrey Smith</span><span>Journal of Labor Economics</span><a class="bibtex-link" href="./bibtex/women-national-supported-work.txt" target="_blank" rel="noopener noreferrer">BibTeX</a></p>
+                  <p class="paper-details"><span>with Jeffrey Smith</span><span>Journal of Labor Economics</span><a class="bibtex-link" href="./bibtex/women-national-supported-work.txt" target="_blank" rel="noopener noreferrer"><span class="bibtex-wordmark" aria-hidden="true"><span class="bibtex-bib">Bib</span><span class="bibtex-tex">TeX</span></span><span class="sr-only">BibTeX</span></a></p>
                 </article>
               </div>
             </article>
           </div>
-        </section>
+          </section>
 
-        <section class="section" id="working-papers">
+          <section class="section" id="working-papers">
           <div class="section-heading">
             <div>
               <p class="section-kicker">Current Research</p>
-              <h2>Projects currently in progress</h2>
+              <h2>Current Research</h2>
             </div>
           </div>
 
           <div class="stack">
             <article class="stack-card">
               <h3><a class="paper-title-link" href="https://rdpackages.github.io/references/Calonico-Cattaneo-Farrell-Palomba-Titiunik_2025_HTERD.pdf" target="_blank" rel="noopener noreferrer">Treatment Effect Heterogeneity in Regression Discontinuity Designs</a></h3>
-              <p>with Matias Cattaneo, Max Farrell, Filippo Palomba, and Rocio Titiunik.</p>
+              <p>with <a class="coauthor-link" href="https://cattaneo.princeton.edu/" target="_blank" rel="noopener noreferrer">Matias Cattaneo</a>, <a class="coauthor-link" href="https://maxhfarrell.com/" target="_blank" rel="noopener noreferrer">Max Farrell</a>, Filippo Palomba, and <a class="coauthor-link" href="https://titiunik.github.io/" target="_blank" rel="noopener noreferrer">Rocio Titiunik</a>.</p>
               <a href="https://rdpackages.github.io/references/Calonico-Cattaneo-Farrell-Palomba-Titiunik_2025_HTERD.pdf" target="_blank" rel="noopener noreferrer">Paper link</a>
             </article>
             <article class="stack-card">
               <h3><a class="paper-title-link" href="https://www.nber.org/papers/w34050" target="_blank" rel="noopener noreferrer">Beyond Bonferroni: Hierarchical Multiple Testing in Empirical Research</a></h3>
-              <p>with Sebastian Galiani.</p>
+              <p>with <a class="coauthor-link" href="https://www.sebastiangaliani.com/" target="_blank" rel="noopener noreferrer">Sebastian Galiani</a>.</p>
               <a href="https://www.nber.org/papers/w34050" target="_blank" rel="noopener noreferrer">NBER working paper</a>
             </article>
             <article class="stack-card">
               <h3><a class="paper-title-link" href="https://www.nber.org/papers/w31781" target="_blank" rel="noopener noreferrer">The Political Economy of a Miracle Cure: The Case of Nebulized Ibuprofen and Its Diffusion in Argentina</a></h3>
-              <p>with Rafael Di Tella and Juan Cruz Lopez del Valle.</p>
+              <p>with <a class="coauthor-link" href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6448" target="_blank" rel="noopener noreferrer">Rafael Di Tella</a> and Juan Cruz Lopez del Valle.</p>
               <a href="https://www.nber.org/papers/w31781" target="_blank" rel="noopener noreferrer">NBER working paper</a>
             </article>
             <article class="stack-card">
               <h3><a class="paper-title-link" href="https://www.nber.org/papers/w30084" target="_blank" rel="noopener noreferrer">Causal Inference During a Pandemic: Evidence on the Effectiveness of Nebulized Ibuprofen as an Unproven Treatment for COVID-19 in Argentina</a></h3>
-              <p>with Rafael Di Tella and Juan Cruz Lopez del Valle.</p>
+              <p>with <a class="coauthor-link" href="https://www.hbs.edu/faculty/Pages/profile.aspx?facId=6448" target="_blank" rel="noopener noreferrer">Rafael Di Tella</a> and Juan Cruz Lopez del Valle.</p>
               <a href="https://www.nber.org/papers/w30084" target="_blank" rel="noopener noreferrer">NBER working paper</a>
             </article>
             <article class="stack-card">
@@ -255,7 +298,7 @@
             </article>
             <article class="stack-card">
               <h3>Generalized Lee Bounds for the Average and Quantile Effects of Multivalued Treatment</h3>
-              <p>with Ying-Ying Lee and Chu-An Liu.</p>
+              <p>with <a class="coauthor-link" href="https://sites.google.com/site/yyleelilian/" target="_blank" rel="noopener noreferrer">Ying-Ying Lee</a> and Chu-An Liu.</p>
               <span class="muted-note">Research underway</span>
             </article>
             <article class="stack-card">
@@ -265,17 +308,17 @@
             </article>
             <article class="stack-card">
               <h3><a class="paper-title-link" href="https://cattaneo.princeton.edu/research" target="_blank" rel="noopener noreferrer">mvte: Estimation and Inference for Multi-valued Treatment Effects</a></h3>
-              <p>with Matias Cattaneo and David Drukker.</p>
+              <p>with <a class="coauthor-link" href="https://cattaneo.princeton.edu/" target="_blank" rel="noopener noreferrer">Matias Cattaneo</a> and David Drukker.</p>
               <span class="muted-note">Software and methods project</span>
             </article>
           </div>
-        </section>
+          </section>
 
-        <section class="section" id="teaching">
+          <section class="section" id="teaching">
           <div class="section-heading">
             <div>
               <p class="section-kicker">Teaching &amp; Advising</p>
-              <h2>Classroom teaching and workshops.</h2>
+              <h2>Classroom teaching, doctoral training, and workshops.</h2>
             </div>
           </div>
 
@@ -302,9 +345,9 @@
               </ul>
             </article>
           </div>
-        </section>
+          </section>
 
-        <section class="section" id="software">
+          <section class="section" id="software">
           <div class="section-heading">
             <div>
               <p class="section-kicker">Software & Methods</p>
@@ -340,11 +383,16 @@
           </div>
 
           <div class="software-note">
-            <p>These packages support empirical researchers working in R, Stata, and, for selected projects, Python. They are designed to connect frontier econometric methods to day-to-day applied research practice.</p>
+            <p>
+              These packages support empirical researchers working in R, Stata,
+              and, for selected projects, Python. They are designed to connect
+              frontier econometric methods to day-to-day applied research
+              practice.
+            </p>
           </div>
-        </section>
+          </section>
 
-        <section class="section contact-section" id="contact">
+          <section class="section contact-section" id="contact">
           <div>
             <p class="section-kicker">Contact</p>
             <h2>Get in touch.</h2>
@@ -352,20 +400,20 @@
           <div class="contact-card">
             <p class="contact-role">Assistant Professor</p>
             <p class="contact-unit">Graduate School of Management, UC Davis</p>
-            <a class="contact-link" href="mailto:scalonico@ucdavis.edu" target="_blank" rel="noopener noreferrer">scalonico@ucdavis.edu</a>
+            <a class="contact-link" href="mailto:scalonico@ucdavis.edu">scalonico@ucdavis.edu</a>
             <div class="contact-links">
               <a href="https://scalonico.github.io/scalonico/Calonico_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a>
               <a href="https://scholar.google.com/citations?user=rpUAhZ8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Scholar</a>
               <a href="https://github.com/scalonico" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
-        </section>
-      </main>
+          </section>
+        </main>
 
       <footer class="site-footer">
-        <p>(c) <span id="year"></span> Sebastian Calonico</p>
+        <p>&copy; <span id="year"></span> Sebastian Calonico</p>
       </footer>
-    </div>
+      </div>
 
     <script src="./script.js"></script>
   </body>

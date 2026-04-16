@@ -1,0 +1,593 @@
+\documentclass[11pt]{article}
+
+\usepackage{newpxtext,newpxmath}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{xcolor}
+\definecolor{navyblue}{rgb}{0.1,0.2,0.6}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
+\usepackage{microtype}
+\usepackage{setspace}
+
+\definecolor{textblue}{HTML}{173146}
+\definecolor{accentgold}{HTML}{00B2E3}
+\definecolor{slate}{HTML}{5A6E80}
+\definecolor{softline}{HTML}{D6E0E6}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[R]{\small\color{slate}\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\setlength{\footskip}{14pt}
+\setlength{\parindent}{0pt}
+\setstretch{1.02}
+
+\hypersetup{
+    pdfnewwindow=true,      % links in new window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=textblue,
+    citecolor=textblue,
+    filecolor=textblue,
+    urlcolor=textblue
+}
+
+\urlstyle{same}
+
+\raggedbottom
+\setlength{\tabcolsep}{0in}
+\setlist[itemize]{itemsep=2pt, topsep=3pt}
+\setlist[enumerate]{itemsep=6pt, topsep=4pt}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{8pt}\normalfont\Large\bfseries\color{textblue}
+}{}{0em}{}[\color{accentgold}\titlerule \vspace{2pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{2pt}\item
+    \begin{tabular*}{0.955\textwidth}{l@{\extracolsep{\fill}}r}
+      {\large\textbf{\color{textblue}#1}} & {\small\color{slate}#2} \\
+      {\small\textit{#3}} & {\small\textit{\color{slate}#4}} \\
+    \end{tabular*}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeSubHeadingListStartEnum}{\begin{enumerate}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEndEnum}{\end{enumerate}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+
+\begin{center}
+    {\fontsize{24}{28}\selectfont\textbf{\color{textblue}Sebastian Calonico}} \\ \vspace{6pt}
+    {\large\color{slate}Assistant Professor of Business Analytics} \\ \vspace{2pt}
+    {\large\color{slate}University of California, Davis} \\ \vspace{6pt}
+    {\color{accentgold}\rule{0.24\textwidth}{1.2pt}} \\ \vspace{8pt}
+    {\small
+    \href{mailto:scalonico@ucdavis.edu}{\faEnvelope\ scalonico@ucdavis.edu}
+    \hspace{12pt}
+    {\color{softline}|}
+    \hspace{12pt}
+    \href{https://sites.google.com/site/scalonico/}{\faGlobe\ Website}
+    \hspace{12pt}
+    {\color{softline}|}
+    \hspace{12pt}
+    \href{https://github.com/scalonico}{\faGithub\ GitHub}} \\
+    \vspace{-4pt}
+\end{center}
+\vspace{4pt}
+
+%-----------EDUCATION-----------------
+\section{Academic Appointments}
+
+\resumeSubHeadingListStart
+    \resumeSubheading{University of California, Davis}{2024--Present}
+        {Assistant Professor, Graduate School of Management}{}
+    \resumeSubheading{Columbia University}{2019--2024}
+        {Assistant Professor, Department of Health Policy \& Management}{}
+    \item[] \begin{itemize}[leftmargin=1.5em, noitemsep, topsep=0pt]
+        \item[] \small\textit{Faculty Affiliate, Data Science Institute.}
+        \item[] \small\textit{Faculty Affiliate, Institute for Latin American Studies.}
+        \item[] \small\textit{Faculty Affiliate, Population Research Center.}
+    \end{itemize}
+    \resumeSubheading{University of Miami}{2014--2019}
+        {Assistant Professor, Department of Economics, Miami Herbert Business School}{}
+\resumeSubHeadingListEnd
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\begin{itemize}[leftmargin=*]
+\item[] \textbf{University of Michigan}
+    \vspace{-5pt}\item[] \quad Ph.D. in Economics, 2014.
+    \vspace{-5pt}\item[] \quad M.A. in Statistics, 2012.
+    \vspace{-5pt}\item[] \quad M.A. in Economics, 2011.
+\item[] \textbf{Universidad Torcuato Di Tella, Argentina.}
+    \vspace{-5pt}\item[] \quad Master in Economics, 2005.
+\item[] \textbf{Universidad de Buenos Aires, Argentina.}
+    \vspace{-5pt}\item[] \quad Licentiate in Economics, 2002.
+    
+%\item[2014] Ph.D. in Economics, University of Michigan.
+%\vspace{-5pt}\item[2012] M.A. in Statistics, University of Michigan.
+%\vspace{-5pt}\item[2011] M.A. in Economics, University of Michigan.
+%\vspace{-5pt}\item[2005] Master in Economics, Universidad %Torcuato Di Tella, Argentina. 
+%\vspace{-5pt}\item[2002] Licentiate in Economics, Universidad de Buenos Aires, Argentina.
+\end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Publications}
+	\smallskip{}	
+	
+	
+\noindent{\large\textbf{\color{textblue}Econometrics \& Quantitative Methods}}
+
+\begin{enumerate}[leftmargin=*]
+\item \href{https://rdpackages.github.io/references/Calonico-Cattaneo-Farrell_2022_Bernoulli.pdf}{``Coverage Error Optimal Confidence Intervals for Local Polynomial Regression''}. \\
+Calonico, S., M. Cattaneo, and M. Farrell.\\
+\textbf{\emph{Bernoulli}}, 28(4): 2998-3022, 2022.
+
+\item \href{https://doi.org/10.1080/07350015.2019.1660664}{``Multivalued Treatments and Decomposition Analysis: An application to the WIA Program''}.\\
+Ao, W., S. Calonico, and Y. Lee. \\
+\textbf{\emph{Journal of Business \& Economic Statistics}}, 39(1): 358-371, 2021.
+
+\item \href{https://rdpackages.github.io/references/Calonico-Cattaneo-Farrell_2020_ECTJ.pdf}{``Optimal Bandwidth Choice for Robust Bias Corrected Inference in Regression Discontinuity Designs''}.\\
+Calonico, S., M. Cattaneo, and M. Farrell.\\
+\textbf{\emph{Econometrics Journal}}, 23(2): 192-210, 2020.
+
+\item \href{https://rdpackages.github.io/references/Calonico-Cattaneo-Farrell-Titiunik_2019_RESTAT.pdf}{``Regression Discontinuity Designs using Covariates''}.\\
+Calonico, S., M. Cattaneo, M. Farrell, and R. Titiunik.\\ 
+\textbf{\emph{Review of Economics and Statistics}}, 101(3): 442-451, 2019. 
+
+\item \href{https://nppackages.github.io/references/Calonico-Cattaneo-Farrell_2018_JASA.pdf}{``On the Effect of Bias Estimation on Coverage Accuracy in Nonparametric Inference''}.\\
+Calonico, S., M. Cattaneo, and M. Farrell.\\
+\textbf{\emph{Journal of the American Statistical Association}}, 113(522): 767-779, 2018. 
+
+\item \href{https://www.journals.uchicago.edu/doi/abs/10.1086/692397?journalCode=jole}{``The Women of the National Supported Work Demonstration''}.\\
+Calonico, S., and J. Smith.\\
+\textbf{\emph{Journal of Labor Economics}}, 35(S1): S65-S97, 2017.
+	
+\item \href{https://rdpackages.github.io/references/Calonico-Cattaneo-Titiunik_2015_JASA.pdf}{``Optimal Data-Driven Regression Discontinuity Plots''}.\\
+Calonico, S., M. Cattaneo, and R. Titiunik. \\
+\textbf{\emph{Journal of the American Statistical Association}}, 110(512): 1753-1769, 2015.
+
+\item \href{https://rdpackages.github.io/references/Calonico-Cattaneo-Titiunik_2014_ECMA.pdf}{``Robust Nonparametric Confidence Intervals for Regression Discontinuity Designs''}.\\
+Calonico, S., M. Cattaneo, and R. Titiunik. \\
+\textbf{\emph{Econometrica}}, 82(6): 2295-2326, 2014.
+\end{enumerate}
+\medskip
+
+
+
+
+
+\noindent{\large\textbf{\color{textblue}Causal Inference in Health and Social Sciences}}
+
+\begin{enumerate}[resume, leftmargin=*]
+
+\item ``\href{https://www.sciencedirect.com/science/article/pii/S2468266725002269}{Unsecured debt in early adulthood and premature mortality in adults in the USA: a longitudinal analysis of prospective national cohort data}''.\\
+Swift, Chen, Colvin, Kezios, Calonico, and Zeki Al Hazzouri.\\
+\textbf{\emph{The Lancet Public Health}}, 10(11): e979-e987, 2025.
+
+
+\item \href{https://journals.lww.com/epidem/abstract/9900/overcoming_data_gaps_in_life_course_epidemiology.272.aspx}{``Overcoming data gaps in life course epidemiology by matching across cohorts.''} \\
+Kezios K, Zimmerman S, Buto P, Rudolph K, Calonico S, Zeki Al Hazzouri A, M. Glymour. \\
+\textbf{\emph{Epidemiology}}, 35(5): 610-617, 2024. 
+
+\item \href{https://www.bmj.com/content/384/bmj-2022-072254.long}{``Regression Discontinuity Design Studies: A Guide for Health Researchers.''}\\
+Calonico S, Jawadekar N, Kezios K,  Zeki Al Hazzouri A. \\
+\textbf{\emph{BMJ}}, 384: e072254, 2024.
+
+\item \href{https://doi.org/10.1371/journal.pgph.0000816}{``Risk factors for COVID-19 in-hospital mortality: The case of Argentina.''}\\
+Calonico S, Di Tella R, Lopez del Valle JC.\\
+\textbf{\emph{PLOS Global Public Health}}, 4(1): e0000816, 2024.
+
+\item \href{https://academic.oup.com/aje/advance-article/doi/10.1093/aje/kwad043/7056288}{``Practical Guide to Honest Causal Forests for Identifying Heterogeneous Treatment Effects in a Randomized Setting.''}\\ 
+Jawadekar N, Kezios K, Odden M, Stingone J, Calonico S, Rudolph K, Zeki Al Hazzouri A. \\
+\textbf{\emph{American Journal of Epidemiology}}, 192(7): 1155-1165, 2023. 
+
+\item \href{https://jamanetwork.com/journals/jama/fullarticle/2801679}{``History of Low Hourly Wage and All-Cause Mortality Among Middle-aged Workers.''}\\
+Kezios K, Lu P, Calonico S, Zeki Al Hazzouri A.\\
+\textbf{\emph{JAMA}}, 329(7): 561–573, 2023.
+
+\item \href{https://link.springer.com/article/10.1007/s10654-023-00982-w}{``RDD to evaluate the effect of statins on myocardial infarction using electronic health records.''} \\ 
+Odden M, Zhang A, Jawadekar N, Tan A, Zeki Al Hazzouri A, Calonico S.\\
+\textbf{\emph{European Journal of Epidemiology}}, 38: 393–402, 2023.
+
+\item \href{https://journals.lww.com/epidem/Abstract/2023/07000/Propensity_Scores_in_Health_Disparities_Research_.6.aspx}{``Propensity Scores in Health Disparities Research: The Example of Cognitive Aging and the Hispanic Paradox.''}\\
+Kezios K, Zimmerman S, Zhang A, Calonico S, Jawadekar N, Glymour M, Zeki Al Hazzouri A. \\
+\textbf{\emph{Epidemiology}}, 34(4): 495-504, 2023.
+
+\item \href{https://n.neurology.org/content/100/6/e595}{``Association Between Supplemental Nutrition Assistance Program Use and Memory Decline: Findings From the Health and Retirement Study''.}\\
+Lu P, Kezios K, Lee J, Calonico S, Weimer C, Zeki Al Hazzouri A. \\
+\textbf{\emph{Neurology}}, 100(6): e595-e602, 2023. 
+
+\item \href{https://pubmed.ncbi.nlm.nih.gov/35020781/}{``Racial Residential Segregation in Young Adulthood and Brain integrity in Middle Age: Can we learn from small samples?''}. \\
+Zeki Al Hazzouri A, Jawadekar N, Kezios K, Caunca M, Elfassy T, Calonico S, Kershaw K, Yaffe K, Launer L, Elbejjani M, Grasset L, Manly J, Odden M, Glymour M.  \\
+\textbf{\emph{American Journal of Epidemiology}}, 191(4): 591-598, 2022. 
+
+\item \href{https://pubmed.ncbi.nlm.nih.gov/34331536/}{``Statins and cognitive decline in the Cardiovascular Health Study: A Comparison of different analytical approaches''}.\\ 
+Zeki Al Hazzouri A, Jawadekar N, Grasset L, Kaiser P, Kezios K, Calonico S, Glymour M, Hirsch C, Arnold A, Varadhan R, Odden M. \\
+\textbf{\emph{Journal of Gerontology: Series A}}, 77(5): 994-1001, 2022.
+
+\item \href{https://pubmed.ncbi.nlm.nih.gov/32788306/}{``Association of negative financial shocks during the Great Recession with depressive symptoms and substance use in the USA: The CARDIA study''}.\\ 
+Swift S, Elfassy T, Bailey Z, Florez H, Feaster D, Calonico S, Sidney S, Kiefe C, Zeki Al Hazzouri A.\\ 
+\textbf{\emph{Journal of Epidemiology and Community Health}}, 74(12): 995-1001, 2020.
+
+\item \href{https://pubmed.ncbi.nlm.nih.gov/31860661/}{``Racial discrimination in medical care settings and opioid pain reliever misuse in a U.S. cohort: 1992 to 2015''}.\\ 
+Swift S, Glymour M, Elfassy T, Lewis C, Kiefe C, Sidney S, Calonico S, Feaster D, Bailey Z, Zeki Al Hazzouri A.\\ 
+\textbf{\emph{PLoS One}}, 14(12), 2019.
+
+\item \href{https://pubmed.ncbi.nlm.nih.gov/30612448/}{``Associations of income volatility with incident cardiovascular disease and all-cause mortality in a US cohort''}.\\ 
+Elfassy T, Swift S, Glymour M, Calonico S, Jacobs D, Mayeda E, Kershaw K, Kiefe C, Zeki Al Hazzouri A.\\
+\textbf{\emph{Circulation}}, 139(7): 850-859, 2019. 
+
+\item \href{https://doi.org/10.1111/j.1475-5890.2016.12120}{``Long-term Health Spending Persistence among the Privately Insured''}.\\ Calonico S, Hirth R, Gibson T, Levy H, Smith J, Das A.\\
+\textbf{\emph{Fiscal Studies}}, 37(3-4): 749-783, 2016.
+
+\item \href{https://pubmed.ncbi.nlm.nih.gov/25701579/}{``New Evidence on the Persistence of High Health Spending''}.\\ 
+Calonico S, Hirth R, Gibson T, Levy H, Smith J, Das A. \\
+\textbf{\emph{Medical Care Research and Review}}, 72(3): 277-297, 2015.
+\end{enumerate}  
+\medskip
+
+
+
+
+
+
+\noindent{\large\textbf{\color{textblue}Statistical Software Publications}}
+
+\begin{enumerate}[resume, leftmargin=*]
+    \item \href{https://nppackages.github.io/references/Calonico-Cattaneo-Farrell_2019_JSS.pdf}{``\texttt{nprobust}: Nonparametric Kernel-Based Estimation and Robust Bias-Corrected Inference''}.\\
+    Calonico, Sebastian, Matias Cattaneo, and Max Farrell.\\ 
+    \textbf{\emph{Journal of Statistical Software}}, 91(8), 2019. 
+    	
+    \item \href{https://rdpackages.github.io/references/Calonico-Cattaneo-Farrell-Titiunik_2017_Stata.pdf}{``\texttt{rdrobust}: Software for Regression Discontinuity Designs''}.\\
+    Calonico, Sebastian, Matias Cattaneo, Max Farrell, and Rocio Titiunik.\\  
+    \textbf{\emph{Stata Journal}}, 17(2): 372-404, 2017. 
+    
+    \item \href{https://rdpackages.github.io/references/Calonico-Cattaneo-Titiunik_2015_R.pdf}{``\texttt{rdrobust}: An \texttt{R} Package for Robust Nonparametric Inference in Regression Discontinuity Designs"}.\\
+    Calonico, Sebastian, Matias Cattaneo, and Rocio Titiunik.\\    
+    \textbf{\emph{R Journal}}, 7(1): 38-51, 2015. 
+    
+    \item \href{https://rdpackages.github.io/references/Calonico-Cattaneo-Titiunik_2014_Stata.pdf}{``Robust Data-Driven Inference in the Regression Discontinuity Design''}.\\
+    Calonico, Sebastian, Matias Cattaneo, and Rocio Titiunik.\\    
+    \textbf{\emph{Stata Journal}}, 14(4): 909-946, 2014. 
+\end{enumerate}  
+\medskip
+
+
+
+
+
+\noindent{\large\textbf{\color{textblue}Book Chapters and Other Publications}}
+
+\begin{enumerate}[resume, leftmargin=*]  
+    \item ``Regression Discontinuity Designs in Policy Evaluation''.\\
+    Calonico S, Bartalotti O, Bertanha M.\\ 
+    Chapter in \emph{Handbook of Research Methods and Applications in Empirical Microeconomics}, ed. by N. Hashimzade and M.A. Thornton, Cheltenham, UK: Edward Elgar, 325-358, 2021.
+
+    \item ``Are Participants Good Evaluators? Evidence from the National Supported Work Demonstration''.\\  
+    Calonico S, Smith J.     
+    Chapter in \emph{Are Participants Good Evaluators?}, ed. by J. Smith, A. Whalley, and N. T. Wilcox., Kalamazoo, MI: W.E. Upjohn Institute for Employment Research, 2021.
+    
+    \item ``Measuring the Impact of the US Financial Crisis on Salvadoran Migrants and Family Remittances''.\\
+    Calonico S, Aycinena D, Inchauste G, Martinez C, Yang D.  \\    
+    Chapter in \emph{Financing the Family: Remittances to Central America in a Time of Crisis}, ed. by G. Inchauste and E. Stein, Palgrave Macmillan, 143-164, 2013.
+    
+    \item ``Gender Segregation in the Workplace and Wage Gaps: Evidence from Urban Mexico 1994-2004''.\\
+    Calonico S, Nopo H. \\    
+    Chapter in \emph{Occupational and Residential Segregation (Research on Economic Inequality, Vol. 17)}, ed. by Y. Fluckiger, S. Reardon and J. Silber, Emerald Group Publishing, 245-270, 2009.
+     
+    \item     ``To What Extent Do Latin Americans Trust and Cooperate? Field Experiments on Social Exclusion in Six Latin American Countries''.\\
+    Calonico S, Candelo N, Cardenas JC, Chong A, Nopo H. \\
+    Chapter in \emph{Outsiders? The Changing Patterns of Exclusion in Latin America and the Caribbean}, ed. by J. Mazza; G. Marquez; H. Nopo; S. Duryea and A. Chong, Harvard University Press, 123-148, 2007.
+    
+    \item ``Where did you go to School? Private-Public Differences in Schooling Trajectories and their Role on Earnings''. \\
+    Calonico S, Nopo H. \\
+    \emph{Well-Being and Social Policy} 3(1): 25-46, 2007.
+\end{enumerate}  
+
+
+
+\section{Working Papers and Research Underway}
+	\smallskip{}
+\begin{enumerate}[leftmargin=*]   
+
+\item \href{https://www.nber.org/papers/w34050}{``Beyond Bonferroni: Hierarchical Multiple Testing in Empirical Research.''} \\
+with Sebastian Galiani. 
+NBER Working Paper 34050.
+
+\item \href{https://rdpackages.github.io/references/Calonico-Cattaneo-Farrell-Palomba-Titiunik_2025_HTERD.pdf}{``Treatment Effect Heterogeneity in Regression Discontinuity Designs.''}\\
+with Matias Cattaneo, Max Farrell, Filippo Palomba, and Rocio Titiunik. 
+
+\item \href{https://rdpackages.github.io/references/Calonico-Cattaneo-Farrell-Palomba-Titiunik_2025_Stata.pdf}{``rdhte: Conditional Average Treatment Effects in RD Designs.''}\\
+with Matias Cattaneo, Max Farrell, Filippo Palomba, and Rocio Titiunik. 
+
+\item \href{https://www.nber.org/papers/w31781}{``The Political Economy of a Miracle Cure: The Case of Nebulized Ibuprofen and its Diffusion in Argentina.''}\\ 
+with Rafael Di Tella and Juan Cruz Lopez del Valle. 
+NBER Working Paper 31781.
+
+\item \href{https://www.nber.org/papers/w30084}{``Causal Inference During a Pandemic: Evidence on the Effectiveness of Nebulized Ibuprofen as an Unproven Treatment for COVID-19 in Argentina.''}\\ 
+with Rafael Di Tella and Juan Cruz Lopez del Valle. 
+NBER Working Paper 30084.
+
+\item ``Job Security and Housing Wealth Risk: Empirical Evidence from U.S. Counties,''\\
+with Dolores Garrido and Salvador Ortigueira.
+
+\item ``Generalized Lee Bounds for the Average and Quantile Effects of Multivalued Treatment,''\\
+with Ying-Ying Lee and Chu-An Liu.
+
+\item ``Vaccine-Preventable COVID-19 Hospitalizations and Deaths in the United States: Evidence from County-Level Vaccination Dynamics.''\\
+with Zoë McLaren. 
+
+\item ``\texttt{mvte}: Estimation and Inference for Multi-valued Treatment Effects.''\\
+with Matias Cattaneo and David Drukker.
+\end{enumerate} 
+
+
+
+
+
+
+
+\section{Software Packages}
+	\smallskip{}
+
+\begin{itemize}[leftmargin=*]
+\item \href{https://rdpackages.github.io/rdhte/}{\texttt{rdhte}}: Estimation and Inference for Heterogeneous Treatment Effects in RDD, for \texttt{R}, and \texttt{Stata}.
+
+\item \href{https://rdpackages.github.io/rdrobust/}{\texttt{rdrobust}}: Estimation and Inference in RDD, for \texttt{R},  \texttt{Stata}, and \texttt{Python}.
+
+\item \href{https://nppackages.github.io/nprobust/}{\texttt{nprobust}}: Kernel-Based Estimation and Robust Bias-Corrected Inference, for \texttt{R}, and \texttt{Stata}.
+\end{itemize}
+
+
+
+
+
+\section{External Research Grants}
+	\smallskip{}
+
+{\large\textbf{\color{textblue}Active}}
+
+\begin{enumerate}[leftmargin=*]
+
+\item \emph{Hypertension, Blood Pressure Targets, and Alzheimer's Disease and Dementia Risk and Disparities among Nationally Representative US Veterans} (R01AG085481).\\
+%Major Goals: to study the relationship between statin treatment and dementia using a regression discontinuity design. And to shed light on heterogeneous treatment effects.\\ 
+%PD/PI: Kristine Yaffe.\\
+Source of Support: NIA. Project Dates: 2024--2029.\\
+%Primary Place of Performance: Columbia University.\\
+Role: \textbf{Multiple PI}.
+
+\item \emph{Illuminating our understanding of statins and Alzheimer's disease and dementia using modern causal inference methods} (R01AG081973).\\
+%Major Goals: to study the relationship between statin treatment and dementia using a regression discontinuity design. And to shed light on heterogeneous treatment effects.\\ 
+%PD/PI: Adina Zeki Al Hazzouri.
+Source of Support: NIA. Project Dates: 2024--2027.\\
+%Primary Place of Performance: Columbia University.\\
+Role: \textbf{Multiple PI}.
+
+\item \emph{Building an unbiased pooled cohort for the study of lifecourse social and vascular determinants of Alzheimers disease and related disorders} (R01AG072681).\\
+%Major Goals: This study will combine eight data sources on lifecourse social and vascular risk factors for Alzheimer’s Disease and Related Dementias (ADRD) to create a large and diverse synthetic birth cohort for research on ADRD. We will apply rigorous methods to estimate and incorporate corrections for selection forces, including survival, enrollment, attrition, and reverse causation from incipient dementia to risk factor changes. The synthetic cohort will then be used to estimate how lifecourse social and vascular factors and hypothetical age-specific interventions on those risk factors would affect ADRD risk and ADRD disparities.\\
+%Project Number: R01AG072681.\\
+%PD/PI: Adina Zeki Al Hazzouri.\\
+Source of Support: NIA.
+%Primary Place of Performance: Columbia University.\\
+Project Dates: 2021--2026.
+Total Award: \$3,893,879.\\
+Role: Co-Investigator.
+
+\item \emph{Late life learning, dementia, and overall health: an investigation of the University for Seniors in Beirut} (R01AG074076-01A1).\\
+%Major Goals: This project will capitalize on an ongoing and well-established late life learning (LLL) program, the University for Seniors (UfS), in Beirut, Lebanon. We will build a prospective cohort and we will include two waves of data collection to rigorously evaluate the relationships of LLL with cognitive function, ADRD, and other related outcomes in older age, whether these relationships are mediated by educational and social engagement, and whether LLL would modify the influence of earlier and lifecourse psychosocial exposures. Through a detailed capacity building program, this application will build research and infrastructure capacities to delineate opportunities for dementia prevention in Lebanon and other low-resourced settings\\
+%Project Number: R01AG074076-01A1.\\
+%PD/PI: Adina Zeki Al Hazzouri.\\
+Source of Support: NIA.
+Project Dates: 2022--2027.
+Total Award: \$3,658,700.\\
+Role: Co-Investigator.
+\end{enumerate}
+\medskip
+
+%\textsc{Pending Funding}
+%\begin{enumerate}[resume, leftmargin=*]
+
+%\item \ul{The distinct and synergistic effects of economic security and healthcare policies on opioid and stimulant-related harm outcomes}.\\
+%Name of PD/PI: Silvia Martins.\\
+%Source of Support: NIH.\\
+%Primary Place of Performance: Columbia University.\\
+%Role: Co-Investigator.
+
+%\item \emph{Does Having Extra Money Enrich the Brain? Investigating Income, Income Supplementation and Alzheimer Disease and Dementia Risk and Disparities} (R01AG087208).\\
+%Source of Support: NIA. Project Dates: 2024 - 2029.
+%Role: Multiple PI.\\
+%Status: \textbf{PENDING (score 24 pctl, within funding payline)}
+%\end{enumerate}
+
+
+
+
+\noindent{\large\textbf{\color{textblue}Completed}}
+
+\begin{enumerate}[resume, leftmargin=*]
+\item \emph{Statins and Risk of Alzheimer's Disease and Related Dementias: A Novel Quasi-Experimental Approach to Identify Causal Effects} (R56AG061177).\\
+%Major Goals: The goal of this grant is to create a quasi-experiment using a clinical guideline in the UK and established statistical methods in economics, regression discontinuity, to study the effect of statin on dementia risk overall, and across relevant subgroups.\\
+Source of Support: NIA.
+%PD/PI: Adina Zeki Al Hazzouri.\\
+%Primary Place of Performance: Columbia University.\\
+Project Dates: 08/2019--07/2021.
+Total Award: \$705,777.\\
+Role: Co-Investigator.
+
+\item \emph{A Binational Study to Understand Dementia Risk and Disparities of Mexican Americans: The Role of Migration and Social Determinants} (RF1AG055486).\\
+%Major Goals: The goal of this study is to create a binational study of two nationally representative cohorts from the US and Mexico to study how migration influences dementia risk of Mexican Americans and factors that increase or reduce dementia risk in Mexican Americans.\\
+%PD/PI: Adina Zeki Al Hazzouri.\\
+Source of Support: NIA.
+%Primary Place of Performance: Columbia University.\\ 
+Project Dates: 06/2017--08/2022.
+Total Award: \$1,714,495.\\
+Role: Co-Investigator.
+\end{enumerate}
+
+%-----------EXPERIENCE-----------------
+\section{Honors and Awards}
+	\smallskip{}
+
+\begin{enumerate}[leftmargin=*] 
+	\item[-] 2018. \emph{Emerging Scholar Award}, University of Miami.
+	\item[-] 2017. \emph{Statistical Software Award},	Society for Political Methodology.
+	Software: \href{https://rdpackages.github.io/}{RD Packages}	
+	\item[-] 2017. \emph{Citations of Excellence Award}, Emerald Group Publishing.
+	Paper: ``Robust Nonparametric Confidence Intervals for Regression-Discontinuity Designs''.
+	\item[-] 2015. \emph{Gosnell Prize}, Society for Political Methodology.
+	Paper: ``Robust Nonparametric Confidence Intervals for Regression-Discontinuity Designs''.
+	%\item[-] 2013. Rackham One-Term Dissertation Fellowship, University of Michigan.
+	%	\item 2007-2009: Rackham Conference Travel Grant, University of Michigan.
+	%\item[-] 2007. Regents Fellowship. Rackham Graduate School, University of Michigan.
+	%\item[-] 2007. Academic Club Award, University of St. Gallen.
+	%\item Graduate Research Fellowship, PICT-99, FONCyT, Argentina. \hfill{} \emph{2003-2005}
+	%\item Diploma de Honor (Magna Cum Laude Honor). \hfill{} \emph{2002}
+\end{enumerate} 
+
+
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Recent and Upcoming Conferences \& Seminars}
+	\smallskip{}
+  \begin{enumerate}[leftmargin=*] 
+    \item[-] 2026. UC Santa Cruz Econometrics Seminar, UC Davis Statistics Seminar, UC San Diego Econometrics Seminar.
+    \item[-] 2025. Oxford Health Economics Seminar, UC Irvine Econometrics Seminar, Institute of Latin American Studies - Columbia University, XXI Ridge Forum Workshop On Inequality \& Poverty (Keynote Speaker).    
+    \item[-] 2024. UC Davis Econometrics Seminar, Southern Economic Association Annual Meeting, SOLE Annual Meeting, Stanford University Rosenkranz Global Health Policy Research Symposium,  2nd conference on Health Economics (TSE), VIII American-European Health Economics Study Group (Catania University), UC Davis GSM.
+    \item[-] 2023. AEA/ASSA Economic Meeting, Gary Chamberlain Online Seminar in Econometrics, Brown University Econometrics Seminar, Latin American and Caribbean Economic Association Meeting (Pontificia Universidad Javeriana, Colombia); Southern Economic Association Annual Meeting.
+	\item[-] 2022. UCSB Economics Department; NYU Econometrics Seminar; University of Cambridge; North American Summer Meeting of the Econometric Society (University of Miami);  $VI$ Jornadas Argentinas de Econometria (Universidad de Buenos Aires, Argentina); Latin American and Caribbean Economic Association Meeting (Universidad del Pacifico, Peru); Southern Economic Association Annual Meeting, Columbia University Causal Inference Learning Group.
+	\item[-] 2020/21. ASSA Meeting San Diego; 8$th$ UDEP Workshop for Young economists (Peru); Stony Brook Economics Seminar; Washington State University Economics Department; Columbia University Causal Inference Learning Group.
+	\item[-] 2019. American University of Beirut; North American Summer Meeting of the Econometric Society (University of Washington); Latin American Meeting of the Econometric Society (Puebla, Mexico); Southern Economic Association Annual Meeting; Computational and Methodological Statistics Conference (University of London).
+	\item[-] 2018. Vanderbilt University Economics Department; University of Notre Dame Economics Department; North American Summer Meeting of the Econometric Society (UC Davis); International Association for Applied Econometrics (UQAM, Montreal); Syracuse University Economics Department; Lima School of Economics (Lima, Peru); Southern Economic Association Annual Meeting; University of Georgia Economics Department. 
+	\item[-] 2017. UC-Davis ARE; North American Summer Meeting of the Econometric Society (Washington University in St. Louis); Midwest Econometrics Group (Texas A\&M University); Latin American Meeting of the Econometric Society (UdeSA, Buenos Aires, Argentina); Computational and Methodological Statistics Conference (University of London).
+	\item[-] 2016. NBER Labor Studies Group Spring Meeting (San Francisco); Advances in Econometrics Conference (University of Michigan); Counterfactual Methods for Policy Impact Evaluation (Catholic University in Milan, Italy); Latin American Meeting of the Econometric Society (Medellin, Colombia).
+%	\item[2015.] Institute for Fiscal Studies, Barcelona GSE Summer Forum, University of Michigan Summer Econometrics Workshop, Econometric Society World Congress, Inter-American Development Bank Research Department.
+%	\item[2014.] University of Miami, IFPRI, Emory University, University of Iowa. 
+%	\item[2013.] Midwest Econometrics Group, University of Michigan Econometrics Seminar. 
+%	\item 2006-2010: LACEA/LAMES Economic Meetings.
+\end{enumerate} 
+  
+
+
+
+%-----------EXPERIENCE-----------------
+\section{Short Courses and Workshops}
+	\smallskip{}
+
+\begin{enumerate}[leftmargin=*] 
+	\item[-] 2023 - 2026. Causal Inference for Social Sciences II, University of Michigan ICPSR Summer Program.
+	\item[-] 2025. Second Winter School in Advanced Methods for Social Sciences, PUCP-QLAB, Lima, Peru.	
+    \item[-] 2024. Program Evaluation, Late Life Learning, Cognition and Aging (3LC) Study, American University of Beirut.
+	\item[-] 2017 - 2024. Regression Discontinuity Designs. University of Michigan ICPSR Summer Program.
+	\item[-] 2021. Impact Evaluation Econometrics. Master in Economics Universidad de Montevideo, Uruguay.  
+	\item[-] 2020. Empirical Methods in Causal Inference, Lima School of Economics; Lima, Peru. 
+	\item[-] 2017. Regression Discontinuity Designs. Group for the Analysis of Development (GRADE); Lima, Peru.
+	\item[-] 2017. Regression Discontinuity Designs. Winter School in Methods and Data Analysis. Universidad Catolica de Uruguay. 
+\end{enumerate} 
+
+
+\section{Teaching Experience}
+	\smallskip{}
+
+\begin{enumerate}[leftmargin=*] 
+        \item[-] UC Davis:  \emph{Data Analysis for Managers} (MBA).
+	\item[-] Columbia University: \emph{Analytics for Decision-Making II} (MHA),  \emph{Economics of Prevention} (MPH).
+	%	\item \quad Analytics for Decision-Making II.
+	
+	\item[-] University of Miami: \emph{Econometrics} (PhD Economics), \emph{Econometrics}, \emph{Labor Economics} (Undergraduate).
+	%		\item  \quad Ph.D. Econometrics I.
+	%		\item  \quad Undergraduate Econometrics.
+	%		\item  \quad Undergraduate Labor Economics.
+	%\item Department of Economics, University of Michigan: Ph.D. Econometrics I \& II, Undergraduate Econometrics. 
+\end{enumerate} 
+
+
+
+
+\section{Students and Advising}
+	\smallskip{}
+\begin{enumerate}[leftmargin=*]
+    \item Andrew Wilson. Ph.D.  in Sustainable Development, SIPA, Columbia University.\\
+    	\quad{} Placement:  Assistant Professor,  University of Virginia - Public Policy.
+	\item Magdalena Bennett. Ph.D. Economics and Education, Teachers College, Columbia University. \\
+	\quad{} Placement:  Assistant Professor, McCombs School of Business, University of Texas at Austin.
+	\item David Rosenkranz.  Ph.D. Economics, Columbia University.\\
+		\quad{} Placement:  Assistant Professor, Economics Department, Fordham University.
+	\item Nicolas Rojas. Ph.D. Candidate in Economics and Education, Teachers College, Columbia University.
+    \item Alan Li. MPH student in Epidemiology. Mailman School of Public Health, Columbia University.
+
+\end{enumerate}
+
+
+
+
+
+\section{Professional Activities}
+	\smallskip{}
+\begin{itemize}[leftmargin=*]
+
+	\item[] \textbf{Journal Referee}\\
+	\emph{Econometrica, American Economic Review, Review of Economics and Statistics, Journal of Political Economy Microeconomics, Journal of Econometrics, Journal of Business \& Economic Statistics, Quantitative Economics, Econometric Theory, Journal of Applied Econometrics, Journal of Econometric Methods, Econometrics Journal, Econometric Reviews, Econometrics and Statistics, American Economic Journal: Economic Policy, Economic Letters, Economic Journal, Economic Inquiry, Economic Development and Cultural Change, Journal of International Development, International Economic Review, Oxford Bulletin of Economics and Statistics, Journal of Economic Behavior and Organization, European Economic Review, Journal of Economic Surveys, Studies in Nonlinear Dynamics.} \emph{Journal of the American Statistical Association, Journal of the Royal Statistical Society: Series A \& B, Journal of Applied Statistics, Journal of Causal Inference, Annals of Applied Statistics, Entropy, Statistica Sinica, Operations Research.} \emph{American Journal of Political Science, American Political Science Review, British Journal of Political Science, Journal of Politics, Assessment in Education: Principles, Policy \& Practice, Statistics in Medicine, Journal of Agricultural Economics, Stata Journal, Computational Economics, BMC Public Health, PLOS One, JAMA Network Open, Science, Nature.}
+
+	\item[] \textbf{Grant Reviewer}\\
+	\emph{National Science Foundation, National Institute of Health, European Research Council.}
+
+\item[] \textbf{Academic Affiliations}\\
+	  \emph{Lima School of Economics Associate}, Universidad de Piura, Peru.
+   
+\item[] \textbf{Conference Session Organizer, Program Committees \& Advisory Boards}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+     \item[-] \emph{Advances in Regression Discontinuity Models}. $12^{th}$ International Conference on Computational and Methodological Statistics, University of London, UK, 2019.	
+     \item[-] \emph{Recent Advances in Nonparametric Methods}. $11^{th}$ International Conference on Computational and Methodological Statistics, University of Pisa, Italy, 2018.
+     \item[-] \emph{Recent Developments on Program Evaluation Methods}. $10^{th}$ International Conference on Computational and Methodological Statistics, University of London, UK, 2017.
+    %\end{itemize}
+%\item[] \textbf{Conference Program Committees \& Advisory Boards}
+  %  \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+    \item[-] LAMES/LACEA: 2016, 2018. 
+    \item[-]  University of Miami. Latin America and Caribbean Initiative Faculty Steering Group Member, 2018. 
+    \end{itemize}
+    
+\item[] \textbf{Other Professional Experience}
+    \begin{itemize}[leftmargin=*, noitemsep, topsep=0pt]
+    \item[-] 2005 - 2007. Research Fellow, Inter-American Development Bank.	
+    \end{itemize}
+    
+\end{itemize}
+
+\noindent\textit{\scriptsize{Last Update: \today}}
+%-------------------------------------------
+\end{document}

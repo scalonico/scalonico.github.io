@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Software | Sebastian Calonico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./standard-styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="site-title-block">
+          <p class="site-eyebrow">Econometrics / Causal Inference / Data Analytics</p>
+          <a class="site-title" href="./standard.html">Sebastian Calonico</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">Menu</button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary" data-open="false">
+          <a href="./standard.html">About</a>
+          <a href="./standard-publications.html">Publications</a>
+          <a href="./standard-research.html">Current Research</a>
+          <a href="./standard-teaching.html">Teaching</a>
+          <a class="is-active" href="./standard-software.html">Software</a>
+          <a href="./standard-contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="page" id="main-content">
+      <section class="content-section">
+        <div class="section-header">
+          <p class="section-kicker">Software</p>
+          <h1 class="page-title">Software &amp; Methods</h1>
+        </div>
+        <div class="three-column">
+          <article class="content-card">
+            <h3><a href="https://rdpackages.github.io/rdhte/" target="_blank" rel="noopener noreferrer">rdhte</a></h3>
+            <p>Conditional average treatment effects in regression discontinuity designs.</p>
+            <p><a class="small-link" href="https://github.com/rdpackages/rdhte" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          </article>
+          <article class="content-card">
+            <h3><a href="https://nppackages.github.io/nprobust/" target="_blank" rel="noopener noreferrer">nprobust</a></h3>
+            <p>Kernel-based estimation and robust bias-corrected inference for nonparametric settings.</p>
+            <p><a class="small-link" href="https://github.com/nppackages/nprobust" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          </article>
+          <article class="content-card">
+            <h3><a href="https://rdpackages.github.io/rdrobust/" target="_blank" rel="noopener noreferrer">rdrobust</a></h3>
+            <p>Estimation and inference in regression discontinuity design.</p>
+            <p><a class="small-link" href="https://github.com/rdpackages/rdrobust" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><p>&copy; <span id="year"></span> Sebastian Calonico</p></footer>
+    <script src="./standard-script.js"></script>
+  </body>
+</html>
