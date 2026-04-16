@@ -337,39 +337,48 @@ a {
   color: var(--accent-strong);
 }
 
-.academic-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0;
+.academic-table-card {
   padding: 0;
   overflow: hidden;
 }
 
-.academic-column-title {
-  margin: 0;
+.academic-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.academic-table th,
+.academic-table td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.academic-table th {
   padding: 1.5rem 1.5rem 0.8rem;
   border-bottom: 1px solid var(--line);
+  font-family: "Fraunces", serif;
+  font-size: 1.35rem;
+  line-height: 1.1;
   color: var(--accent-strong);
 }
 
-.academic-column-title + .academic-column-title {
-  border-left: 1px solid var(--line);
-}
-
-.academic-cell {
+.academic-table td {
   padding: 1.35rem 1.5rem 1.5rem;
-}
-
-.academic-grid .academic-cell {
   border-bottom: 1px solid var(--line);
 }
 
-.academic-grid .academic-cell:nth-last-child(-n + 2) {
+.academic-table th + th,
+.academic-table td + td {
+  border-left: 1px solid var(--line);
+}
+
+.academic-table tbody tr:last-child td {
   border-bottom: 0;
 }
 
-.academic-grid .academic-cell:nth-child(even) {
-  border-left: 1px solid var(--line);
+.academic-table .entry-item {
+  margin: 0;
 }
 
 .entry-item h4 {
@@ -643,25 +652,38 @@ a {
     gap: 0.35rem;
   }
 
-  .academic-grid {
-    grid-template-columns: 1fr;
+  .academic-table,
+  .academic-table thead,
+  .academic-table tbody,
+  .academic-table tr,
+  .academic-table th,
+  .academic-table td {
+    display: block;
+    width: 100%;
   }
 
-  .academic-column-title + .academic-column-title,
-  .academic-grid .academic-cell:nth-child(even) {
+  .academic-table thead tr {
+    display: none;
+  }
+
+  .academic-table td {
+    padding: 1rem 1.2rem 1.2rem;
+  }
+
+  .academic-table td + td {
     border-left: 0;
-  }
-
-  .academic-grid .academic-column-title:not(:first-child) {
     border-top: 1px solid var(--line);
   }
 
-  .academic-grid .academic-cell:nth-last-child(-n + 2) {
-    border-bottom: 1px solid var(--line);
-  }
-
-  .academic-grid .academic-cell:last-child {
-    border-bottom: 0;
+  .academic-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 0.65rem;
+    color: var(--accent);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
   }
 
   .publication-item .bibtex-link {
