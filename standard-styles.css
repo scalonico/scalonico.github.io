@@ -337,24 +337,6 @@ a {
   color: var(--accent-strong);
 }
 
-.academic-pairs {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: 2rem;
-  row-gap: 1.35rem;
-}
-
-.academic-pairs-head {
-  margin: 0;
-  padding-bottom: 0.8rem;
-  border-bottom: 1px solid var(--line);
-  color: var(--accent-strong);
-}
-
-.academic-pairs-item {
-  margin: 0;
-}
-
 .entry-item h4 {
   color: var(--text);
 }
@@ -624,26 +606,6 @@ a {
   .card-heading {
     grid-template-columns: 1fr;
     gap: 0.35rem;
-  }
-
-  .academic-pairs {
-    grid-template-columns: 1fr;
-    row-gap: 1rem;
-  }
-
-  .academic-pairs-head {
-    display: none;
-  }
-
-  .academic-pairs-item::before {
-    content: attr(data-label);
-    display: block;
-    margin-bottom: 0.65rem;
-    color: var(--accent);
-    font-size: 0.76rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
   }
 
   .publication-item .bibtex-link {
