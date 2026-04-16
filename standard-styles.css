@@ -368,9 +368,9 @@ a {
   border-bottom: 1px solid var(--line);
 }
 
-.academic-table th + th,
-.academic-table td + td {
-  border-left: 1px solid var(--line);
+.academic-table th:first-child,
+.academic-table td:first-child {
+  border-right: 1px solid var(--line);
 }
 
 .academic-table tbody tr:last-child td {
@@ -670,8 +670,11 @@ a {
     padding: 1rem 1.2rem 1.2rem;
   }
 
+  .academic-table td:first-child {
+    border-right: 0;
+  }
+
   .academic-table td + td {
-    border-left: 0;
     border-top: 1px solid var(--line);
   }
 
