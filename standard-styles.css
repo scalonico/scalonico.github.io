@@ -357,6 +357,18 @@ a {
   white-space: nowrap;
 }
 
+.degree-subline {
+  margin-top: 0.15rem;
+}
+
+.degree-subline .entry-year {
+  visibility: hidden;
+}
+
+.degree-subline span:last-child {
+  font-size: 0.96rem;
+}
+
 .teaching-summary {
   gap: 0;
 }
