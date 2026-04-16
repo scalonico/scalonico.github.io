@@ -337,6 +337,41 @@ a {
   color: var(--accent-strong);
 }
 
+.academic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.academic-column-title {
+  margin: 0;
+  padding: 1.5rem 1.5rem 0.8rem;
+  border-bottom: 1px solid var(--line);
+  color: var(--accent-strong);
+}
+
+.academic-column-title + .academic-column-title {
+  border-left: 1px solid var(--line);
+}
+
+.academic-cell {
+  padding: 1.35rem 1.5rem 1.5rem;
+}
+
+.academic-grid .academic-cell {
+  border-bottom: 1px solid var(--line);
+}
+
+.academic-grid .academic-cell:nth-last-child(-n + 2) {
+  border-bottom: 0;
+}
+
+.academic-grid .academic-cell:nth-child(even) {
+  border-left: 1px solid var(--line);
+}
+
 .entry-item h4 {
   color: var(--text);
 }
@@ -606,6 +641,27 @@ a {
   .card-heading {
     grid-template-columns: 1fr;
     gap: 0.35rem;
+  }
+
+  .academic-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .academic-column-title + .academic-column-title,
+  .academic-grid .academic-cell:nth-child(even) {
+    border-left: 0;
+  }
+
+  .academic-grid .academic-column-title:not(:first-child) {
+    border-top: 1px solid var(--line);
+  }
+
+  .academic-grid .academic-cell:nth-last-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .academic-grid .academic-cell:last-child {
+    border-bottom: 0;
   }
 
   .publication-item .bibtex-link {
