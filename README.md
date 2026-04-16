@@ -4,9 +4,10 @@ This repository contains a static personal website for Sebastian Calonico. It is
 
 ## Files
 
-- `index.html` contains the page structure and content.
-- `styles.css` contains the visual design and responsive layout.
-- `script.js` adds the footer year and active navigation highlighting.
+- `index.html` is the publish-ready homepage.
+- `standard-*.html` files are the additional section pages.
+- `standard-styles.css` contains the styling for the standard published site.
+- `standard-script.js` adds the footer year and mobile navigation behavior.
 - `.nojekyll` tells GitHub Pages to serve the site directly as static files.
 
 ## Best GitHub Setup
