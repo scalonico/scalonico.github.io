@@ -3,19 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sebastian Calonico</title>
+    <title>Sebastian Calonico | Econometrics &amp; Causal Inference</title>
     <meta
       name="description"
-      content="Standard-format academic homepage for Sebastian Calonico."
+      content="Sebastian Calonico is an econometrician and Assistant Professor at UC Davis specializing in causal inference, regression discontinuity designs, and data analytics."
     />
-    <meta name="theme-color" content="#f8f4ed" />
+    <meta name="theme-color" content="#f4f7f8" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sebastian Calonico | Econometrics &amp; Causal Inference" />
+    <meta property="og:description" content="Research, publications, and software in econometrics, causal inference, and data analytics." />
+    <meta property="og:url" content="https://scalonico.github.io/" />
+    <link rel="canonical" href="https://scalonico.github.io/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sebastian Calonico",
+        "url": "https://scalonico.github.io/",
+        "jobTitle": "Assistant Professor of Business Analytics",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "University of California, Davis"
+        },
+        "email": "mailto:scalonico@ucdavis.edu",
+        "sameAs": [
+          "https://scholar.google.com/citations?user=rpUAhZ8AAAAJ",
+          "https://github.com/scalonico"
+        ],
+        "knowsAbout": [
+          "Econometrics",
+          "Causal inference",
+          "Regression discontinuity designs",
+          "Nonparametric inference",
+          "Data analytics"
+        ]
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./standard-styles.css" />
+    <link rel="stylesheet" href="./standard-styles.css?v=5" />
     <script src="./analytics.js"></script>
   </head>
   <body>
@@ -24,11 +55,9 @@
     <header class="site-header" id="top">
       <div class="header-inner">
         <div class="site-title-block">
-          <p class="site-eyebrow">Econometrics / Causal Inference / Data Analytics</p>
           <a class="site-title" href="./index.html">Sebastian Calonico</a>
           <div class="site-subtitle">
-            <p>Assistant Professor of Business Analytics</p>
-            <p>University of California, Davis</p>
+            <p>Econometrics · Causal Inference · Data Analytics</p>
           </div>
         </div>
         <button
@@ -41,12 +70,12 @@
           Menu
         </button>
         <nav class="site-nav" id="site-nav" aria-label="Primary" data-open="false">
-          <a class="is-active" href="./index.html">About</a>
-          <a href="./standard-publications.html">Publications</a>
-          <a href="./standard-research.html">Current Research</a>
-          <a href="./standard-teaching.html">Teaching</a>
-          <a href="./standard-software.html">Software</a>
-          <a href="./standard-contact.html">Contact</a>
+          <a class="is-active" aria-current="page" href="./index.html">About</a>
+          <a href="./publications.html">Publications</a>
+          <a href="./research.html">Current Research</a>
+          <a href="./teaching.html">Teaching</a>
+          <a href="./software.html">Software</a>
+          <a href="./contact.html">Contact</a>
         </nav>
       </div>
     </header>
@@ -54,26 +83,70 @@
     <main class="page" id="main-content">
       <section class="intro">
         <div class="intro-main">
+          <p class="section-kicker">Assistant Professor of Business Analytics · UC Davis</p>
+          <h1 class="sr-only">Sebastian Calonico</h1>
           <p class="intro-lede">
-            My research focuses on causal inference, program evaluation, and
-            econometric methods for credible empirical analysis. I study how
-            tools from econometrics and data science can be used to draw
-            reliable conclusions from observational and administrative data,
-            with applications in economics, health, public policy, and
-            business analytics.
-          </p>
-          <p class="intro-lede">
-            A central theme of my work is the integration of methodological
-            rigor with applied relevance. I develop methods and software that
-            are useful for researchers and decision-makers, with particular
-            interests in regression discontinuity designs, treatment effects,
-            and nonparametric inference.
+            I develop econometric methods and open-source software for causal
+            inference, with particular interests in regression discontinuity
+            designs, treatment effects, and nonparametric inference. My applied
+            work spans economics, health, public policy, and business analytics.
           </p>
           <div class="intro-actions">
             <a class="button button-primary" href="./CV/resume.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
             <a class="button" href="https://scholar.google.com/citations?user=rpUAhZ8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
             <a class="button" href="https://github.com/scalonico" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="featured-research-title">
+        <div class="section-header section-header-with-link">
+          <div>
+            <p class="section-kicker">Featured work</p>
+            <h2 id="featured-research-title">Current Research</h2>
+          </div>
+          <a class="small-link" href="./research.html">View all research <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="featured-list">
+          <article class="featured-item">
+            <p class="card-label">NBER Working Paper 34050 · Revised 2026</p>
+            <div>
+              <h3><a href="https://www.nber.org/papers/w34050">Beyond Bonferroni: Multiple Testing in Empirical Research</a></h3>
+              <p>With Sebastian Galiani.</p>
+            </div>
+            <a class="item-action" href="https://www.nber.org/papers/w34050">Paper <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="featured-item">
+            <p class="card-label">Working paper · 2026</p>
+            <div>
+              <h3><a href="https://rdpackages.github.io/rdhte/">Treatment Effect Heterogeneity in Regression Discontinuity Designs</a></h3>
+              <p>With Matias Cattaneo, Max Farrell, Filippo Palomba, and Rocio Titiunik.</p>
+            </div>
+            <a class="item-action" href="https://rdpackages.github.io/rdhte/">Project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="featured-item">
+            <p class="card-label">Software paper · 2026</p>
+            <div>
+              <h3><a href="https://rdpackages.github.io/rdhte/">rdhte: Conditional Average Treatment Effects in RD Designs</a></h3>
+              <p>Estimation and inference for heterogeneous treatment effects in RD designs.</p>
+            </div>
+            <a class="item-action" href="https://rdpackages.github.io/rdhte/">Software <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section" aria-labelledby="software-title">
+        <div class="section-header section-header-with-link">
+          <div>
+            <p class="section-kicker">Open-source tools</p>
+            <h2 id="software-title">Research Software</h2>
+          </div>
+          <a class="small-link" href="./software.html">Explore all software <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="software-strip" aria-label="Featured software">
+          <a href="https://rdpackages.github.io/rdrobust/"><strong>rdrobust</strong><span>RD estimation and inference</span></a>
+          <a href="https://nppackages.github.io/nprobust/"><strong>nprobust</strong><span>Robust nonparametric inference</span></a>
+          <a href="https://rdpackages.github.io/rdhte/"><strong>rdhte</strong><span>Heterogeneous effects in RD · R, Stata, Python</span></a>
         </div>
       </section>
 
@@ -127,6 +200,6 @@
       <p>&copy; <span id="year"></span> Sebastian Calonico</p>
     </footer>
 
-    <script src="./standard-script.js"></script>
+    <script src="./standard-script.js?v=2"></script>
   </body>
 </html>

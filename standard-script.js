@@ -35,4 +35,17 @@ if (navToggle && nav) {
       setNavState(false);
     }
   });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setNavState(false);
+      navToggle.focus();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (window.innerWidth <= 700 && !nav.contains(event.target) && !navToggle.contains(event.target)) {
+      setNavState(false);
+    }
+  });
 }
