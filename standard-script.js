@@ -24,14 +24,14 @@ if (navToggle && nav) {
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      if (window.innerWidth <= 700) {
+      if (window.innerWidth <= 1100) {
         setNavState(false);
       }
     });
   });
 
   window.addEventListener("resize", () => {
-    if (window.innerWidth > 700) {
+    if (window.innerWidth > 1100) {
       setNavState(false);
     }
   });
@@ -44,7 +44,7 @@ if (navToggle && nav) {
   });
 
   document.addEventListener("click", (event) => {
-    if (window.innerWidth <= 700 && !nav.contains(event.target) && !navToggle.contains(event.target)) {
+    if (window.innerWidth <= 1100 && !nav.contains(event.target) && !navToggle.contains(event.target)) {
       setNavState(false);
     }
   });

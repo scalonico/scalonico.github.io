@@ -8,7 +8,7 @@
       name="description"
       content="Sebastian Calonico is an econometrician and Assistant Professor at UC Davis specializing in causal inference, regression discontinuity designs, and data analytics."
     />
-    <meta name="theme-color" content="#f4f7f8" />
+    <meta name="theme-color" content="#f3efe7" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Sebastian Calonico | Econometrics &amp; Causal Inference" />
     <meta property="og:description" content="Research, publications, and software in econometrics, causal inference, and data analytics." />
@@ -43,163 +43,122 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./standard-styles.css?v=5" />
+    <link rel="stylesheet" href="./standard-styles.css?v=6" />
     <script src="./analytics.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header" id="top">
-      <div class="header-inner">
-        <div class="site-title-block">
-          <a class="site-title" href="./index.html">Sebastian Calonico</a>
-          <div class="site-subtitle">
-            <p>Econometrics · Causal Inference · Data Analytics</p>
-          </div>
-        </div>
-        <button
-          class="nav-toggle"
-          type="button"
-          aria-expanded="false"
-          aria-controls="site-nav"
-          aria-label="Toggle navigation"
-        >
+    <header class="masthead">
+      <div class="masthead-inner">
+        <a class="identity" href="./index.html" aria-label="Sebastian Calonico, homepage">
+          <span class="identity-mark" aria-hidden="true">SC</span>
+          <span>
+            <strong>Sebastian Calonico</strong>
+            <small>Econometrician · UC Davis</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="draft-nav">
           Menu
         </button>
-        <nav class="site-nav" id="site-nav" aria-label="Primary" data-open="false">
-          <a class="is-active" aria-current="page" href="./index.html">About</a>
-          <a href="./publications.html">Publications</a>
-          <a href="./research.html">Current Research</a>
-          <a href="./teaching.html">Teaching</a>
-          <a href="./software.html">Software</a>
-          <a href="./contact.html">Contact</a>
+
+        <nav class="ledger-nav" id="draft-nav" aria-label="Primary" data-open="false">
+          <a class="is-active" aria-current="page" href="./index.html"><span>01</span> About</a>
+          <a href="./publications.html"><span>02</span> Publications</a>
+          <a href="./research.html"><span>03</span> Research</a>
+          <a href="./teaching.html"><span>04</span> Teaching</a>
+          <a href="./software.html"><span>05</span> Software</a>
+          <a href="./contact.html"><span>06</span> Contact</a>
         </nav>
       </div>
     </header>
 
-    <main class="page" id="main-content">
-      <section class="intro">
-        <div class="intro-main">
-          <p class="section-kicker">Assistant Professor of Business Analytics · UC Davis</p>
-          <h1 class="sr-only">Sebastian Calonico</h1>
-          <p class="intro-lede">
-            I develop econometric methods and open-source software for causal
-            inference, with particular interests in regression discontinuity
-            designs, treatment effects, and nonparametric inference. My applied
-            work spans economics, health, public policy, and business analytics.
+    <main id="main-content">
+      <section class="hero ledger-width" id="about">
+        <div class="hero-copy">
+          <p class="folio">Assistant Professor of Business Analytics</p>
+          <h1>Sebastian Calonico</h1>
+          <p class="hero-role">Graduate School of Management · University of California, Davis</p>
+          <p class="hero-lede">
+            I develop econometric methods and open-source software for causal inference,
+            with particular interests in regression discontinuity designs, treatment
+            effects, and nonparametric inference.
           </p>
-          <div class="intro-actions">
-            <a class="button button-primary" href="./CV/resume.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae</a>
-            <a class="button" href="https://scholar.google.com/citations?user=rpUAhZ8AAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
-            <a class="button" href="https://github.com/scalonico" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <div class="hero-links" aria-label="Profile links">
+            <a href="./CV/resume.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae <span>↗</span></a>
+            <a href="https://scholar.google.com/citations?user=rpUAhZ8AAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar <span>↗</span></a>
+            <a href="https://github.com/scalonico" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
           </div>
         </div>
-      </section>
 
-      <section class="content-section" aria-labelledby="featured-research-title">
-        <div class="section-header section-header-with-link">
-          <div>
-            <p class="section-kicker">Featured work</p>
-            <h2 id="featured-research-title">Current Research</h2>
+        <aside class="hero-figure hero-recent" aria-labelledby="hero-recent-title">
+          <div class="hero-recent-heading">
+            <h2 id="hero-recent-title">Recent research</h2>
+            <a href="./research.html">View all <span>→</span></a>
           </div>
-          <a class="small-link" href="./research.html">View all research <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="featured-list">
-          <article class="featured-item">
-            <p class="card-label">NBER Working Paper 34050 · Revised 2026</p>
-            <div>
+          <div class="hero-research-list">
+            <article>
+              <p class="hero-paper-meta">2026 · NBER 34050 · Revised</p>
               <h3><a href="https://www.nber.org/papers/w34050">Beyond Bonferroni: Multiple Testing in Empirical Research</a></h3>
               <p>With Sebastian Galiani.</p>
-            </div>
-            <a class="item-action" href="https://www.nber.org/papers/w34050">Paper <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="featured-item">
-            <p class="card-label">Working paper · 2026</p>
-            <div>
+            </article>
+            <article>
+              <p class="hero-paper-meta">2026 · Working paper</p>
               <h3><a href="https://rdpackages.github.io/rdhte/">Treatment Effect Heterogeneity in Regression Discontinuity Designs</a></h3>
               <p>With Matias Cattaneo, Max Farrell, Filippo Palomba, and Rocio Titiunik.</p>
-            </div>
-            <a class="item-action" href="https://rdpackages.github.io/rdhte/">Project <span aria-hidden="true">↗</span></a>
-          </article>
-          <article class="featured-item">
-            <p class="card-label">Software paper · 2026</p>
-            <div>
+            </article>
+            <article>
+              <p class="hero-paper-meta">2026 · Software paper</p>
               <h3><a href="https://rdpackages.github.io/rdhte/">rdhte: Conditional Average Treatment Effects in RD Designs</a></h3>
               <p>Estimation and inference for heterogeneous treatment effects in RD designs.</p>
-            </div>
-            <a class="item-action" href="https://rdpackages.github.io/rdhte/">Software <span aria-hidden="true">↗</span></a>
-          </article>
-        </div>
-      </section>
-
-      <section class="content-section" aria-labelledby="software-title">
-        <div class="section-header section-header-with-link">
-          <div>
-            <p class="section-kicker">Open-source tools</p>
-            <h2 id="software-title">Research Software</h2>
+            </article>
           </div>
-          <a class="small-link" href="./software.html">Explore all software <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="software-strip" aria-label="Featured software">
-          <a href="https://rdpackages.github.io/rdrobust/"><strong>rdrobust</strong><span>RD estimation and inference</span></a>
-          <a href="https://nppackages.github.io/nprobust/"><strong>nprobust</strong><span>Robust nonparametric inference</span></a>
-          <a href="https://rdpackages.github.io/rdhte/"><strong>rdhte</strong><span>Heterogeneous effects in RD · R, Stata, Python</span></a>
-        </div>
+        </aside>
       </section>
 
-      <section class="content-section">
-        <div class="section-header">
-          <p class="section-kicker">Appointments & Education</p>
-          <h2>Academic Background</h2>
-        </div>
-        <div class="two-column">
-          <article class="content-card">
-            <h3>Appointments</h3>
-            <div class="entry-list">
-              <div class="entry-item">
-                <h4>UC Davis</h4>
-                <p class="degree-line"><span class="entry-year">2024 - Present</span><span>Assistant Professor of Business Analytics, Graduate School of Management.</span></p>
-              </div>
-              <div class="entry-item">
-                <h4>Columbia University</h4>
-                <p class="degree-line"><span class="entry-year">2019 - 2024</span><span>Assistant Professor, Department of Health Policy &amp; Management.</span></p>
-              </div>
-              <div class="entry-item">
-                <h4>University of Miami</h4>
-                <p class="degree-line"><span class="entry-year">2014 - 2019</span><span>Assistant Professor, Department of Economics, Miami Herbert Business School.</span></p>
-              </div>
-            </div>
-          </article>
-          <article class="content-card">
-            <h3>Education</h3>
-            <div class="entry-list">
-              <div class="entry-item">
-                <h4>University of Michigan</h4>
-                <p class="degree-line"><span class="entry-year">2014</span><span>Ph.D. in Economics.</span></p>
-                <p class="degree-line"><span class="entry-year">2012</span><span>M.A. in Statistics.</span></p>
-                <p class="degree-line"><span class="entry-year">2011</span><span>M.A. in Economics.</span></p>
-              </div>
-              <div class="entry-item">
-                <h4>Universidad Torcuato Di Tella</h4>
-                <p class="degree-line"><span class="entry-year">2005</span><span>Master in Economics.</span></p>
-              </div>
-              <div class="entry-item">
-                <h4>Universidad de Buenos Aires</h4>
-                <p class="degree-line"><span class="entry-year">2002</span><span>Licentiate in Economics.</span></p>
-              </div>
-            </div>
-          </article>
+      <section class="ledger-section ledger-width background-section" id="background" aria-labelledby="background-title">
+        <div class="section-content">
+          <div class="section-heading">
+            <h2 id="background-title">Appointments &amp; education</h2>
+          </div>
+          <div class="background-grid">
+            <article>
+              <p class="column-label">Appointments</p>
+              <div class="record-row"><span>2024—</span><p><strong>UC Davis</strong><br />Assistant Professor of Business Analytics</p></div>
+              <div class="record-row"><span>2019—24</span><p><strong>Columbia University</strong><br />Assistant Professor</p></div>
+              <div class="record-row"><span>2014—19</span><p><strong>University of Miami</strong><br />Assistant Professor</p></div>
+            </article>
+            <article>
+              <p class="column-label">Education</p>
+              <div class="record-row"><span>2014</span><p><strong>University of Michigan</strong><br />Ph.D. in Economics</p></div>
+              <div class="record-row"><span>2005</span><p><strong>Universidad Torcuato Di Tella</strong><br />Master in Economics</p></div>
+              <div class="record-row"><span>2002</span><p><strong>Universidad de Buenos Aires</strong><br />Licentiate in Economics</p></div>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>&copy; <span id="year"></span> Sebastian Calonico</p>
+      <div class="ledger-width footer-inner">
+        <p>Sebastian Calonico <span>—</span> Econometrics · Causal Inference · Data Analytics</p>
+        <p>University of California, Davis</p>
+      </div>
     </footer>
 
-    <script src="./standard-script.js?v=2"></script>
+    <script>
+      const menuButton = document.querySelector('.menu-toggle');
+      const menu = document.querySelector('.ledger-nav');
+
+      menuButton?.addEventListener('click', () => {
+        const open = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-expanded', String(!open));
+        menu.dataset.open = String(!open);
+      });
+    </script>
   </body>
 </html>
