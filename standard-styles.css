@@ -1269,10 +1269,59 @@ button:focus-visible {
   line-height: 1.45;
 }
 
-.publication-item p > span:not(.bibtex-wordmark),
+.publication-item p > span:not(.bibtex-wordmark) {
+  color: var(--gold);
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
 .publication-item p > strong {
   color: var(--ink);
   font-weight: 600;
+}
+
+/* Give every existing red text accent a stronger weight. */
+.ledger-nav a span,
+.ledger-nav a:hover,
+.ledger-nav a:focus-visible,
+.ledger-nav a.is-active,
+.folio,
+.hero-links a span,
+.section-heading a span,
+.hero-recent-heading a span,
+.hero-paper-meta,
+.hero-research-list h3 a:hover,
+.hero-research-list h3 a:focus-visible,
+.focus-list li span,
+.section-index span,
+.research-meta span,
+.research-row h3 a:hover,
+.research-row h3 a:focus-visible,
+.column-label,
+.footer-inner span,
+.site-nav a::before,
+.site-nav a:hover,
+.site-nav a:focus-visible,
+.site-nav a.is-active,
+.entry-year,
+.teaching-tag,
+.research-status,
+.small-link,
+.publication-item h4 a:hover,
+.publication-item h4 a:focus-visible,
+.research-item h3 a:hover,
+.research-item h3 a:focus-visible,
+.contact-card a:hover,
+.contact-card a:focus-visible,
+.bibtex-bib,
+.bibtex-tex,
+.coauthor-link:hover,
+.coauthor-link:focus-visible,
+.research-item .research-status,
+.three-column .content-card h3 a,
+.contact-icon {
+  font-weight: 700;
 }
 
 .publication-actions {
