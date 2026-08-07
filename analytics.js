@@ -1,4 +1,4 @@
-const GA_MEASUREMENT_ID = "G-NCLZM2KWSY";
+const GA_MEASUREMENT_ID = "G-ZHK57BS5EC";
 
 if (GA_MEASUREMENT_ID !== "G-XXXXXXXXXX") {
   window.dataLayer = window.dataLayer || [];
