@@ -108,3 +108,24 @@ Do not begin with a generic DataPATH request. First ask the BE-FAIR operational 
 4. Chart review, outreach, contact, enrollment, and treatment intensity.
 
 If those objects exist, use DataPATH to prototype the cohort and outcomes, then pursue an IRB-approved link to the identified and operational data. If below-cutoff scores do not exist, shift to an alternative design based on rollout timing, model-version changes, capacity shocks, or a prospective intervention.
+
+## 2026-08-11 — Methods and simulation prototype
+
+### Decision
+
+Frame the first methods paper around causal inference at learned policy boundaries. Separate the effect conditional on the deployed model from an algorithm-averaged effect that incorporates variation induced by training samples or model updates.
+
+### Reason
+
+A fixed-score RD is a useful benchmark but not a standalone methodological contribution. Model training selects the people at the policy margin. This adds a second source of uncertainty and makes the scientific target depend on whether the institution cares about one frozen deployment or a recurring model-development procedure.
+
+### Prototype
+
+- Added a synthetic-data simulation with a 60th-percentile eligibility rule, human noncompliance, heterogeneous treatment benefit, and adverse-event outcomes.
+- Added local-linear RD estimates of the recommendation first stage, outcome effect, and fuzzy-RD ratio.
+- Added scenarios in which risk and treatment benefit are positively or negatively related.
+- Added a UC Davis outreach package centered on five decisive feasibility questions.
+
+### Next methods task
+
+Add repeated training samples. Compare confidence intervals conditional on one fitted model with intervals that incorporate training-induced variation in the boundary effect.

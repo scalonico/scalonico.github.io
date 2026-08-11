@@ -1,4 +1,4 @@
-# Formal Model, Version 0.1
+# Formal Model, Version 0.2
 
 ## 1. Scope
 
@@ -8,7 +8,7 @@ The first methodological paper should answer one question:
 
 > What does a discontinuity at an AI-generated decision boundary identify about the effect and marginal policy value of the deployed decision system?
 
-Dynamic model updating, interference, multiple actions, and sequential monitoring are extensions.
+The methods paper now prioritizes training-induced boundary uncertainty. Dynamic model updating, interference, multiple actions, and sequential monitoring remain extensions.
 
 ## 2. Environment
 
@@ -332,9 +332,9 @@ The baseline paper does not require identification of \(m(\cdot)\).
 
 ### 9.1 Generated running variable
 
-If \(g\) is estimated on an independent training sample and frozen, inference can condition on the realized score function. If training and evaluation samples overlap, feature construction uses future information, or the model is repeatedly retrained, score-estimation uncertainty may enter the RD distribution.
+If \(g\) is estimated on an independent training sample and frozen, inference can condition on the realized score function. This identifies the effect at the boundary created by the deployed model. It does not automatically cover uncertainty about which boundary a different training sample would create.
 
-Candidate approaches include sample splitting, cross-fitting, joint influence-function expansions, and uniform inference over a class of learned boundaries.
+The primary methods extension separates evaluation-sample uncertainty from training-induced variation in the local causal effect. Candidate approaches include sample splitting, cross-fitting, nested resampling, joint influence-function expansions, and uniform inference over a class of learned boundaries. See `methodological-contribution.md` for the formal research program.
 
 ### 9.2 Model updates and version changes
 
@@ -398,3 +398,13 @@ Core outputs should show:
 - Group-specific effects with multiplicity-adjusted uncertainty.
 
 The simulation should demonstrate concretely that predictive improvement and policy improvement can move in opposite directions.
+
+## 12. Version 0.2 decision
+
+The central methods paper will distinguish:
+
+1. The conditional effect at the boundary of the model actually deployed.
+2. The algorithm-averaged effect across plausible training samples or model versions.
+3. The welfare value of the deployed risk ranking relative to net-benefit targeting.
+
+This structure makes the benchmark RD transparent while locating the new contribution in the randomness and instability of learned policy boundaries. The first simulation implements the conditional benchmark and the risk-versus-benefit targeting result. A second simulation will add repeated model training and compare conditional with two-source confidence intervals.
