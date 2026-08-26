@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  26 AUG 2026 00:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  26 AUG 2026 00:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -672,19 +672,19 @@ Package hyperref Info: Link coloring ON on input line 86.
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(45.80893pt, 505.89pt, 45.80894pt)
-* v-part:(T,H,B)=(77.84674pt, 650.43pt, 116.77011pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
+* h-part:(L,W,R)=(54.2025pt, 505.89pt, 54.2025pt)
+* v-part:(T,H,B)=(57.81598pt, 650.43pt, 86.72401pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
 * \textwidth=505.89pt
 * \textheight=650.43pt
-* \oddsidemargin=-26.46106pt
-* \evensidemargin=-26.46106pt
-* \topmargin=5.57675pt
+* \oddsidemargin=-18.06749pt
+* \evensidemargin=-18.06749pt
+* \topmargin=-14.45401pt
 * \headheight=0.0pt
 * \headsep=0.0pt
 * \topskip=11.0pt
@@ -738,92 +738,93 @@ nput line 96.
 (/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
 )
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 104.
+ input line 108.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.
 fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 104.
+n input line 108.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 110.
+(Font)              scaled to size 14.4pt on input line 114.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 110.
+(Font)              scaled to size 14.4pt on input line 114.
 LaTeX Font Info:    Trying to load font information for TS1+zpltlf on input lin
-e 112.
+e 116.
  (/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2021/11/24 v1.0 fd file for TS1/zpltlf
 )
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 112.
+(Font)              scaled to size 10.95pt on input line 116.
 LaTeX Font Info:    Trying to load font information for OT1+minzpl on input lin
-e 114.
+e 118.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/ot1minzpl.fd
 File: ot1minzpl.fd 2021/05/25 v1.0 font definition file for OT1/minzpl/TLF
 )
 LaTeX Font Info:    Font shape `OT1/minzpl/m/n' will be
-(Font)              scaled to size 10.95pt on input line 114.
+(Font)              scaled to size 10.95pt on input line 118.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `minzpl' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `OT1/minzpl/m/n' will be
-(Font)              scaled to size 8.0pt on input line 114.
+(Font)              scaled to size 8.0pt on input line 118.
 LaTeX Font Info:    Font shape `OT1/minzpl/m/n' will be
-(Font)              scaled to size 6.1pt on input line 114.
+(Font)              scaled to size 6.1pt on input line 118.
 LaTeX Font Info:    Trying to load font information for U+npxmia on input line 
-114.
+118.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+npxsym on input line 
-114.
+118.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/npxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 
-114.
+118.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 114.
+(Font)              scaled to size 12.0pt on input line 118.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 114.
+(Font)              scaled to size 10.0pt on input line 118.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 130.
-LaTeX Font Info:    Font shape `T1/zpltlf/b/it' will be
-(Font)              scaled to size 10.95pt on input line 156.
+(Font)              scaled to size 10.95pt on input line 134.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
+(Font)              scaled to size 10.95pt on input line 155.
  [1
 
 {/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
 al/texlive/2026/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/tex
 live/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texl
 ive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/local/tex
-live/2026/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}] [2] [3]
+live/2026/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}]
+LaTeX Font Info:    Font shape `T1/zpltlf/b/it' will be
+(Font)              scaled to size 10.95pt on input line 175.
+ [2] [3]
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
-270.
+289.
 
 (/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 10.95pt on input line 270.
+(Font)              scaled to size 10.95pt on input line 289.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `npxtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 10.95pt on input line 297.
  [4] [5]
 [6] [7] [8]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 594.
+(Font)              scaled to size 8.0pt on input line 590.
  [9{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}] 
 (./resume.aux)
  ***********
@@ -831,16 +832,16 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: 1B623CAEB7A0E8E49FB628894AD1E0E1;1931.
+(rerunfilecheck)             Checksum: 4917551EF143ACB85BC7FF61A32C11AF;1822.
  ) 
 Here is how much of TeX's memory you used:
- 20406 strings out of 467349
- 332424 string characters out of 5415635
- 757682 words of memory out of 5000000
+ 20416 strings out of 467349
+ 332610 string characters out of 5415635
+ 757679 words of memory out of 5000000
  49050 multiletter control sequences out of 15000+600000
- 686592 words of font info for 143 fonts, out of 8000000 for 9000
+ 687053 words of font info for 148 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1421b,661s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,1421b,664s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
 me5Brands-Regular.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/fo
 ntawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2026/texmf-dist/fonts
@@ -849,10 +850,10 @@ ntawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2026/texmf-dist/fonts
 c/newpx/zplb.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/z
 plbi.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on resume.pdf (9 pages, 197040 bytes).
+Output written on resume.pdf (9 pages, 197332 bytes).
 PDF statistics:
- 272 PDF objects out of 1000 (max. 8388607)
- 240 compressed objects within 3 object streams
+ 273 PDF objects out of 1000 (max. 8388607)
+ 241 compressed objects within 3 object streams
  77 named destinations out of 1000 (max. 500000)
  30817 words of extra memory for PDF output out of 35830 (max. 10000000)
 
