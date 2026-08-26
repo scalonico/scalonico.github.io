@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.2) (preloaded format=pdflatex 2026.4.1)  17 APR 2026 16:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  25 AUG 2026 23:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./resume.tex
-(resume.tex
+**resume.tex
+(./resume.tex
 LaTeX2e <2025-11-01>
-L3 programming layer <2026-01-19>
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+L3 programming layer <2026-03-20>
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count275
@@ -21,32 +21,29 @@ File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
 \c@table=\count282
 \abovecaptionskip=\skip49
 \belowcaptionskip=\skip50
-\bibindent=\dimen148
+\bibindent=\dimen150
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\newpxtext.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/newpxtext.sty
 Package: newpxtext 2025/06/07 v1.542 LaTeX and unicode LaTeX support for TeXGyr
 ePagellaX (Michael Sharpe)
 
 `newpxtext' v1.542, 2025/06/07 Text macros taking advantage of TeXGyre Pagella 
 and its extensions (msharpe)
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
-fg
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 274.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.
-def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.l
-tx)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1365.
@@ -57,136 +54,129 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2026-01-19 L3 programming layer (loader) 
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-03-20 L3 programming layer (loader) 
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
-pdftex.def
-File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count283
 ))
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xp
-arse.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2025-10-09 L3 Experimental document command parser
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.st
-y
+(/usr/local/texlive/2026/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count284
 ))
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2024/12/12 v1.0g TeX engine tests
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2025/11/04 v2.10 package option processing (HA)
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.te
-x
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.t
-ex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2026/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks17
 \XKV@tempa@toks=\toks18
+\XKV@tempb@toks=\toks19
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\keyval.tex
-))
+(/usr/local/texlive/2026/texmf-dist/tex/generic/xkeyval/keyval.tex))
 \XKV@depth=\count285
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.te
-x
+(/usr/local/texlive/2026/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/xstring/xstring.tex
 \xs_counta=\count286
 \xs_countb=\count287
 )
 Package: xstring 2023/08/22 v1.86 String manipulations (CT)
-) (C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.st
-y)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/carlisle/scalefnt.sty)
 LaTeX Font Info:    Setting zplLF sub-encoding to TS1/0 on input line 40.
 LaTeX Font Info:    Setting zplTLF sub-encoding to TS1/0 on input line 40.
 LaTeX Font Info:    Setting zplOsF sub-encoding to TS1/0 on input line 40.
 LaTeX Font Info:    Setting zplTOsF sub-encoding to TS1/0 on input line 40.
 \zpl@cnt=\count288
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/fontaxes\fontaxes.st
-y
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2026-01-02 v2.0.2 Font selection axes (deprecated)
 Applying: [2024-11-01] Use figureversions if present on input line 74.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/figureversions\figur
-eversions.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/figureversions/figureversions.sty
 Package: figureversions 2025-04-29 v1.0.1 Figure versions
 )
 Already applied: [0000-00-00] Fall back to v1 on input line 76.
 )
-\zpl@sixem=\dimen149
-\zpl@y=\dimen150
-\zpl@x=\dimen151
-\zpl@tmpdima=\dimen152
-\zpl@tmpdimb=\dimen153
-\zpl@tmpdimc=\dimen154
-\zpl@tmpdimd=\dimen155
-\zpl@tmpdime=\dimen156
-\zpl@tmpdimf=\dimen157
-\zpl@dimA=\dimen158
-\zpl@dimAA=\dimen159
-\zpl@dimB=\dimen160
-\zpl@dimBB=\dimen161
-\zpl@dimC=\dimen162
+\zpl@sixem=\dimen151
+\zpl@y=\dimen152
+\zpl@x=\dimen153
+\zpl@tmpdima=\dimen154
+\zpl@tmpdimb=\dimen155
+\zpl@tmpdimc=\dimen156
+\zpl@tmpdimd=\dimen157
+\zpl@tmpdime=\dimen158
+\zpl@tmpdimf=\dimen159
+\zpl@dimA=\dimen160
+\zpl@dimAA=\dimen161
+\zpl@dimB=\dimen162
+\zpl@dimBB=\dimen163
+\zpl@dimC=\dimen164
 LaTeX Info: Redefining \oldstylenums on input line 807.
 LaTeX Font Info:    Trying to load font information for T1+zplLF on input line 
 815.
-
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1zpllf.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/t1zpllf.fd
 File: t1zpllf.fd 2021/05/25 v1.0 font definition file for T1/zpl/lf
 )
 LaTeX Font Info:    Trying to load font information for T1+zplTLF on input line
  816.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1zpltlf.fd
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/t1zpltlf.fd
 File: t1zpltlf.fd 2021/05/25 v1.0 font definition file for T1/zpl/tlf
 )
 LaTeX Font Info:    Trying to load font information for T1+zplOsF on input line
  817.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1zplosf.fd
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/t1zplosf.fd
 File: t1zplosf.fd 2021/05/25 v1.0 font definition file for T1/zpl/osf
 )
 LaTeX Font Info:    Trying to load font information for T1+zplTOsF on input lin
 e 818.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1zpltosf.fd
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/t1zpltosf.fd
 File: t1zpltosf.fd 2021/05/25 v1.0 font definition file for T1/zpl/tosf
-)) (C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\newpxmath.s
-ty
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/newpxmath.sty
 Package: newpxmath 2025/10/30 v1.551 LaTeX math support for newpx (Michael Shar
 pe)
+
 `newpxmath' v1.551, 2025/10/30 Math macros based on pxfonts (msharpe)
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2025/07/09 v2.17z AMS math features
 \@mathmargin=\skip51
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2024/11/17 v2.01 AMS text
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks19
-\ex@=\dimen163
-)) (C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
-y
+\@emptytoks=\toks20
+\ex@=\dimen165
+))
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen164
-) (C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+\pmbraise@=\dimen166
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count289
@@ -206,7 +196,7 @@ LaTeX Info: Redefining \big on input line 721.
 LaTeX Info: Redefining \Big on input line 722.
 LaTeX Info: Redefining \bigg on input line 723.
 LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen165
+\big@size=\dimen167
 LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
 \macc@depth=\count294
@@ -219,32 +209,30 @@ LaTeX Info: Redefining \Relbar on input line 970.
 \dotsspace@=\muskip17
 \c@parentequation=\count296
 \dspbrk@lvl=\count297
-\tag@help=\toks20
+\tag@help=\toks21
 \row@=\count298
 \column@=\count299
 \maxfields@=\count300
-\andhelp@=\toks21
-\eqnshift@=\dimen166
-\alignsep@=\dimen167
-\tagshift@=\dimen168
-\tagwidth@=\dimen169
-\totwidth@=\dimen170
-\lineht@=\dimen171
-\@envbody=\toks22
+\andhelp@=\toks22
+\eqnshift@=\dimen168
+\alignsep@=\dimen169
+\tagshift@=\dimen170
+\tagwidth@=\dimen171
+\totwidth@=\dimen172
+\lineht@=\dimen173
+\@envbody=\toks23
 \multlinegap=\skip52
 \multlinetaggap=\skip53
-\mathdisplay@stack=\toks23
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2950.
 LaTeX Info: Redefining \] on input line 2951.
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/binhex\binhex.tex)
-
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/oberdiek\centernot.s
-ty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/kastrup/binhex.tex)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
-\px@tA=\toks24
-\px@tB=\toks25
+\px@tA=\toks25
+\px@tB=\toks26
 \px@su=\read2
 \px@Isdigit=\count301
 
@@ -332,7 +320,7 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsPXA' in version `bold'
 (Font)                  U/npxexa/m/n --> U/npxexa/b/n on input line 347.
 \px@cntz=\count302
 \px@IsAlNum=\count303
-\px@sbptoks=\toks26
+\px@sbptoks=\toks27
 LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 502.
 LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 503.
 LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 504.
@@ -359,129 +347,110 @@ LaTeX Font Info:    Redeclaring math accent \ddot on input line 574.
 LaTeX Font Info:    Redeclaring math accent \vec on input line 1631.
 LaTeX Info: Redefining \Bbbk on input line 2208.
 LaTeX Info: Redefining \not on input line 2548.
-)
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/preprint\fullpage.st
-y
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/preprint/fullpage.sty
 Package: fullpage 1999/02/23 1.1 (PWD)
 \FP@margin=\skip54
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.st
-y
+(/usr/local/texlive/2026/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \ttl@box=\box55
 \beforetitleunit=\skip55
 \aftertitleunit=\skip56
-\ttl@plus=\dimen172
-\ttl@minus=\dimen173
-\ttl@toksa=\toks27
-\titlewidth=\dimen174
-\titlewidthlast=\dimen175
-\titlewidthfirst=\dimen176
+\ttl@plus=\dimen174
+\ttl@minus=\dimen175
+\ttl@toksa=\toks28
+\titlewidth=\dimen176
+\titlewidthlast=\dimen177
+\titlewidthfirst=\dimen178
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/marvosym\marvosym.st
-y
+(/usr/local/texlive/2026/texmf-dist/tex/latex/marvosym/marvosym.sty
 Package: marvosym 2011/07/20 v2.2 Martin Vogel's Symbols font definitions
 )
 
 Package xcolor Warning: Package option `usenames' is obsolete and ignored on in
 put line 8.
 
-
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/graphics\dvipsnam.de
-f
+(/usr/local/texlive/2026/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks28
-\verbatim@line=\toks29
+\every@verbatim=\toks29
+\verbatim@line=\toks30
 \verbatim@in@stream=\read3
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.st
-y
+(/usr/local/texlive/2026/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2025/02/06 v3.11 Customized lists
-\enitkv@toks@=\toks30
+\enitkv@toks@=\toks31
 \labelindent=\skip57
-\enit@outerparindent=\dimen177
-\enit@toks=\toks31
+\enit@outerparindent=\dimen179
+\enit@toks=\toks32
 \enit@inbox=\box56
 \enit@count@id=\count304
 \enitdp@description=\count305
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
-y
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2026-01-29 v7.01p Hypertext links for LaTeX
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.
-sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdef
-inekeys.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescap
-e.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.st
-y
+(/usr/local/texlive/2026/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexc
-mds.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarer
-r.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 ))
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.st
-y
+(/usr/local/texlive/2026/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\get
-titlestring.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/gettitlestring/gettitlestring.s
+ty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.
-sty
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
 \c@section@level=\count306
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringen
-c.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen178
+\@linkdim=\dimen180
 \Hy@linkcounter=\count307
 \Hy@pagecounter=\count308
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2026-01-29 v7.01p Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.st
-y
+(/usr/local/texlive/2026/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count309
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2026-01-29 v7.01p Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -495,24 +464,23 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4468.
 \c@Hy@tempcnt=\count310
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4807.
-\XeTeXLinkMargin=\dimen179
+\XeTeXLinkMargin=\dimen181
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintc
-alc.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
 \Fld@menulength=\count311
-\Field@Width=\dimen180
-\Fld@charsize=\dimen181
+\Field@Width=\dimen182
+\Fld@charsize=\dimen183
 Package hyperref Info: Hyper figures OFF on input line 6084.
 Package hyperref Info: Link nesting OFF on input line 6089.
 Package hyperref Info: Hyper index ON on input line 6092.
@@ -526,26 +494,22 @@ Package hyperref Info: PDF/A mode OFF on input line 6114.
 )
 Package hyperref Info: Driver: hpdftex.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2026-01-29 v7.01p Hyperref driver for pdfTeX
 \Fld@listcount=\count315
 \c@bookmark@seq@number=\count316
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerun
-filecheck.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniq
-uecounter.sty
+(/usr/local/texlive/2026/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
 \Hy@SectionHShift=\skip58
-)
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.st
-y
+) (/usr/local/texlive/2026/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
 \f@nch@headwidth=\skip59
@@ -562,62 +526,55 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 \f@nch@widthL=\skip70
 \f@nch@widthC=\skip71
 \f@nch@widthR=\skip72
-\@temptokenb=\toks32
+\@temptokenb=\toks33
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawe
-some5.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
 Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\
-l3keys2e.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawe
-some5-generic-helper.sty
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic
+-helper.sty
 Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fon
 tawesome5
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\fontawe
-some5-mapping.def)))
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.st
-y
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping
+.def))) (/usr/local/texlive/2026/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2026/03/07 v6.0 Page Geometry
- (C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+
+(/usr/local/texlive/2026/texmf-dist/tex/generic/iftex/ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
 \Gm@cnth=\count317
 \Gm@cntv=\count318
 \c@Gm@tempcnt=\count319
-\Gm@bindingoffset=\dimen182
-\Gm@wd@mp=\dimen183
-\Gm@odd@mp=\dimen184
-\Gm@even@mp=\dimen185
-\Gm@layoutwidth=\dimen186
-\Gm@layoutheight=\dimen187
-\Gm@layouthoffset=\dimen188
-\Gm@layoutvoffset=\dimen189
-\Gm@dimlist=\toks33
-
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cf
-g))
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.
-sty
+\Gm@bindingoffset=\dimen184
+\Gm@wd@mp=\dimen185
+\Gm@odd@mp=\dimen186
+\Gm@even@mp=\dimen187
+\Gm@layoutwidth=\dimen188
+\Gm@layoutheight=\dimen189
+\Gm@layouthoffset=\dimen190
+\Gm@layoutvoffset=\dimen191
+\Gm@dimlist=\toks34
+)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
-\MT@toks=\toks34
+\MT@toks=\toks35
 \MT@tempbox=\box57
 \MT@count=\count320
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
 LaTeX Info: Redefining \leftprotrusion on input line 1085.
-\MT@prot@toks=\toks35
+\MT@prot@toks=\toks36
 LaTeX Info: Redefining \rightprotrusion on input line 1104.
 LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen190
+\MT@outer@kern=\dimen192
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
 \MT@listname@count=\count321
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-
-pdftex.def
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2026/03/01 v3.2d Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 944.
@@ -626,28 +583,26 @@ LaTeX Info: Redefining \lslig on input line 944.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.
-cfg
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
 )
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.st
-y
+(/usr/local/texlive/2026/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
 Package hyperref Info: Option `pdfnewwindow' set `true' on input line 40.
 Package hyperref Info: Option `colorlinks' set `true' on input line 40.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 10.95pt on input line 86.
- (resume.aux)
+
+(./resume.aux)
 \openout1 = `resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 86.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
  86.
-
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\omlnpxmi.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
 LaTeX Font Info:    ... okay on input line 86.
@@ -664,8 +619,7 @@ LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
 86.
-
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\unpxexa.fd
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
 LaTeX Font Info:    ... okay on input line 86.
@@ -673,7 +627,7 @@ LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
  86.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\lmsnpxsy.fd
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
 LaTeX Font Info:    ... okay on input line 86.
@@ -681,7 +635,7 @@ LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 86.
 LaTeX Font Info:    Trying to load font information for LMX+npxexx on input lin
 e 86.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\lmxnpxexx.fd
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
 LaTeX Font Info:    ... okay on input line 86.
@@ -690,27 +644,26 @@ LaTeX Font Info:    ... okay on input line 86.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 86.
 LaTeX Font Info:    ... okay on input line 86.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf
-.mkii
+(/usr/local/texlive/2026/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count322
-\scratchdimen=\dimen191
+\scratchdimen=\dimen193
 \scratchbox=\box58
 \nofMPsegments=\count323
 \nofMParguments=\count324
-\everyMPshowfont=\toks36
+\everyMPshowfont=\toks37
 \MPscratchCnt=\count325
-\MPscratchDim=\dimen192
+\MPscratchDim=\dimen194
 \MPnumerator=\count326
 \makeMPintoPDFobject=\count327
-\everyMPtoPDFconversion=\toks37
+\everyMPtoPDFconversion=\toks38
 )
 \c@mv@tabular=\count328
 \c@mv@boldtabular=\count329
 LaTeX Info: Command `\dddot' is already robust on input line 86.
 LaTeX Info: Command `\ddddot' is already robust on input line 86.
 Package hyperref Info: Link coloring ON on input line 86.
- (resume.out) (resume.out)
+ (./resume.out) (./resume.out)
 \@outlinefile=\write3
 \openout3 = `resume.out'.
 
@@ -768,8 +721,7 @@ Package microtype Info: Patching command `\showhyphens'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ppl.cfg
+(/usr/local/texlive/2026/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
@@ -783,13 +735,13 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
 nput line 96.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontaw
-esomefree1.fd)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
+)
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
  input line 104.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome5\ufontaw
-esomebrands0.fd)
+(/usr/local/texlive/2026/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.
+fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not 
 available
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
@@ -800,8 +752,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 110.
 LaTeX Font Info:    Trying to load font information for TS1+zpltlf on input lin
 e 112.
-
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\ts1zpltlf.fd
+ (/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 File: ts1zpltlf.fd 2021/11/24 v1.0 fd file for TS1/zpltlf
 )
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
@@ -809,7 +760,7 @@ LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
 LaTeX Font Info:    Trying to load font information for OT1+minzpl on input lin
 e 114.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\ot1minzpl.fd
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/ot1minzpl.fd
 File: ot1minzpl.fd 2021/05/25 v1.0 font definition file for OT1/minzpl/TLF
 )
 LaTeX Font Info:    Font shape `OT1/minzpl/m/n' will be
@@ -825,19 +776,19 @@ LaTeX Font Info:    Font shape `OT1/minzpl/m/n' will be
 LaTeX Font Info:    Trying to load font information for U+npxmia on input line 
 114.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\unpxmia.fd
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+npxsym on input line 
 114.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\unpxsym.fd
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/npxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 
 114.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\unpxsyc.fd
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
@@ -848,19 +799,17 @@ LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 10.95pt on input line 130.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/it' will be
 (Font)              scaled to size 10.95pt on input line 156.
+ [1
 
-[1
-
-{C:/Users/ncalonic/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/n
-calonic/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{C:/
-Users/ncalonic/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome5/fa5fr
-ee1.enc}{C:/Users/ncalonic/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontaw
-esome5/fa5brands0.enc}{C:/Users/ncalonic/AppData/Local/Programs/MiKTeX/fonts/en
-c/dvips/newpx/zpl_TOsF.enc}] [2] [3]
+{/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2026/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/tex
+live/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texl
+ive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/local/tex
+live/2026/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}] [2] [3]
 LaTeX Font Info:    Trying to load font information for T1+npxtt on input line 
 270.
 
-(C:\Users\ncalonic\AppData\Local\Programs\MiKTeX\tex/latex/newpx\t1npxtt.fd
+(/usr/local/texlive/2026/texmf-dist/tex/latex/newpx/t1npxtt.fd
 File: t1npxtt.fd 2000/12/14 v1.0
 )
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
@@ -871,12 +820,12 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.95pt on input line 297.
-
-[4] [5] [6] [7] [8]
+ [4] [5]
+[6] [7] [8]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 587.
- [9{C:/Users/ncalonic/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-o
-t1-tlf.enc}] (resume.aux)
+(Font)              scaled to size 8.0pt on input line 592.
+ [9{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}] 
+(./resume.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
@@ -885,26 +834,25 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: 1B623CAEB7A0E8E49FB628894AD1E0E1;1931.
  ) 
 Here is how much of TeX's memory you used:
- 20411 strings out of 467867
- 336040 string characters out of 5416883
- 753774 words of memory out of 5000000
- 48851 multiletter control sequences out of 15000+600000
+ 20406 strings out of 467349
+ 332424 string characters out of 5415635
+ 757682 words of memory out of 5000000
+ 49050 multiletter control sequences out of 15000+600000
  686592 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,1423b,661s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/ncalonic/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontaweso
-me5/FontAwesome5Brands-Regular.pfb><C:/Users/ncalonic/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb><C:/Users/ncalo
-nic/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/NewPXMI.pfb><C:/User
-s/ncalonic/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/t1xtt.pfb><
-C:/Users/ncalonic/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zplb.p
-fb><C:/Users/ncalonic/AppData/Local/Programs/MiKTeX/fonts/type1/public/newpx/zp
-lbi.pfb><C:/Users/ncalonic/AppData/Local/Programs/MiKTeX/fonts/type1/public/new
-px/zplr.pfb><C:/Users/ncalonic/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/newpx/zplri.pfb>
-Output written on resume.pdf (9 pages, 225781 bytes).
+ 75i,11n,79p,1421b,661s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
+me5Brands-Regular.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/fo
+ntawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2026/texmf-dist/fonts
+/type1/public/newpx/NewPXMI.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1
+/public/txfonts/t1xtt.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/publi
+c/newpx/zplb.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/z
+plbi.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
+</usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
+Output written on resume.pdf (9 pages, 197205 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
+ 272 PDF objects out of 1000 (max. 8388607)
+ 240 compressed objects within 3 object streams
+ 77 named destinations out of 1000 (max. 500000)
  30817 words of extra memory for PDF output out of 35830 (max. 10000000)
 
