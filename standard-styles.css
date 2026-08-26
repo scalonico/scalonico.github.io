@@ -1134,6 +1134,16 @@ button:focus-visible {
   text-transform: uppercase;
 }
 
+.coming-soon {
+  color: var(--gold);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
 .page-title {
   margin: 0.6rem 0 0;
   color: var(--ink);
