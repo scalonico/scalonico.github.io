@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  25 AUG 2026 23:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.3.31)  26 AUG 2026 00:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -823,7 +823,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
  [4] [5]
 [6] [7] [8]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
-(Font)              scaled to size 8.0pt on input line 592.
+(Font)              scaled to size 8.0pt on input line 594.
  [9{/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}] 
 (./resume.aux)
  ***********
@@ -849,7 +849,7 @@ ntawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2026/texmf-dist/fonts
 c/newpx/zplb.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/z
 plbi.pfb></usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
 </usr/local/texlive/2026/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on resume.pdf (9 pages, 197205 bytes).
+Output written on resume.pdf (9 pages, 197040 bytes).
 PDF statistics:
  272 PDF objects out of 1000 (max. 8388607)
  240 compressed objects within 3 object streams
