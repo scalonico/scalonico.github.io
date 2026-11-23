@@ -43,8 +43,8 @@
       href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./site.css?v=3" />
-    <script src="./site.js?v=3" defer></script>
+    <link rel="stylesheet" href="./site.css?v=4" />
+    <script src="./site.js?v=4" defer></script>
     <script src="./analytics.js?v=2" defer></script>
   </head>
   <body class="home">
@@ -108,11 +108,16 @@
           <figure class="rd">
             <svg id="rd-plot" role="img" aria-labelledby="rd-caption"></svg>
             <figcaption>
-              <p id="rd-caption">Regression discontinuity plot, simulated data: raw observations, binned means and a polynomial fit on each side.</p>
+              <p id="rd-caption">Regression discontinuity plot, simulated data: raw observations, binned means, a global polynomial fit (thin line) and the local linear fit inside the bandwidth (thick line).</p>
               <p class="rd-readout" aria-live="polite">
-                Estimated jump <strong id="rd-est">0.04</strong>
+                Estimate <strong id="rd-est">0.08</strong>
                 <span aria-hidden="true">·</span>
                 true jump <strong id="rd-true">0.04</strong>
+              </p>
+              <p class="rd-readout" aria-live="polite">
+                Robust 95% interval <strong id="rd-ci">[−0.04, 0.20]</strong>
+                <span aria-hidden="true">·</span>
+                <em id="rd-cover" class="rd-cover">covers the true jump</em>
               </p>
               <div class="rd-controls">
                 <label for="rd-jump">True jump</label>
@@ -122,6 +127,10 @@
                 <label for="rd-noise">Noise (sd)</label>
                 <input type="range" id="rd-noise" min="0.02" max="0.6" step="0.01" value="0.13" />
                 <output id="rd-noise-out" for="rd-noise">0.13</output>
+
+                <label for="rd-h">Bandwidth (h)</label>
+                <input type="range" id="rd-h" min="0.05" max="1" step="0.01" value="0.2" />
+                <output id="rd-h-out" for="rd-h">0.20</output>
 
                 <label for="rd-n">Sample size</label>
                 <select id="rd-n">
@@ -133,7 +142,7 @@
                 </select>
                 <span></span>
 
-                <label for="rd-order">Polynomial order</label>
+                <label for="rd-order">Global fit order</label>
                 <select id="rd-order">
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -146,7 +155,10 @@
                 <label><input type="checkbox" id="rd-raw" checked /> Show raw data</label>
                 <button type="button" id="rd-resample">Draw a new sample</button>
               </div>
-              <p class="rd-note">The estimate is the gap between the two fitted curves at the cutoff. It is not a bias-corrected estimate.</p>
+              <p class="rd-note">
+                The estimate and interval match <code id="rd-call">rdrobust(y, x, h = 0.20)</code>: local linear fit, triangular kernel, robust bias-corrected interval.
+                <span id="rd-window"></span> fall inside the bandwidth.
+              </p>
             </figcaption>
           </figure>
         </main>

@@ -328,6 +328,20 @@ section:first-of-type > .sec,
   color: var(--muted);
 }
 
+.rd-readout + .rd-readout {
+  margin-top: 0.15rem;
+}
+
+.rd-cover {
+  color: var(--muted);
+  font-style: normal;
+}
+
+.rd-cover[data-covers="false"] {
+  color: var(--accent);
+  font-weight: 600;
+}
+
 .rd-controls {
   display: grid;
   grid-template-columns: max-content minmax(0, 14rem) max-content;
@@ -387,6 +401,12 @@ section:first-of-type > .sec,
   margin-top: 0.5rem;
 }
 
+.rd-note code {
+  color: var(--ink);
+  font-family: var(--mono);
+  font-size: 0.95em;
+}
+
 .rd-axis {
   stroke: var(--muted);
   stroke-width: 1;
@@ -396,6 +416,17 @@ section:first-of-type > .sec,
   fill: var(--muted);
   font-family: var(--sans);
   font-size: 13px;
+}
+
+.rd-window {
+  fill: var(--accent);
+  fill-opacity: 0.06;
+}
+
+.rd-global {
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.25;
 }
 
 .rd-raw {

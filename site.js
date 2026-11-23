@@ -9,11 +9,140 @@ document.addEventListener("keydown", (event) => {
 });
 window.addEventListener("beforeprint", openFolds);
 
+// >>> estimator
+// Sharp RD estimate at cutoff 0 with a manual bandwidth, following the steps of
+// rdrobust(y, x, h = h): local linear point estimate (p = 1), local quadratic bias
+// correction (q = 2) with the bias bandwidth equal to h (rho = 1), triangular kernel,
+// and nearest-neighbour variance with three matches. Returns null when a side has too
+// few observations inside the bandwidth.
+function rdRobust(xs, ys, h) {
+  const inv = (A) => {
+    // Gauss-Jordan inverse of a small square matrix.
+    const k = A.length;
+    const M = A.map((row, i) => [...row, ...Array.from({ length: k }, (_, j) => (i === j ? 1 : 0))]);
+    for (let c = 0; c < k; c++) {
+      let piv = c;
+      for (let r = c + 1; r < k; r++) if (Math.abs(M[r][c]) > Math.abs(M[piv][c])) piv = r;
+      [M[c], M[piv]] = [M[piv], M[c]];
+      const d = M[c][c];
+      for (let j = 0; j < 2 * k; j++) M[c][j] /= d;
+      for (let r = 0; r < k; r++) {
+        if (r === c) continue;
+        const f = M[r][c];
+        for (let j = 0; j < 2 * k; j++) M[r][j] -= f * M[c][j];
+      }
+    }
+    return M.map((row) => row.slice(k));
+  };
+
+  // Nearest-neighbour residuals on data sorted by x (rdrobust_res with vce = "nn").
+  const nnResiduals = (x, y, matches) => {
+    const n = x.length;
+    const eps = Math.sqrt(Number.EPSILON);
+    const res = new Array(n);
+    for (let pos = 0; pos < n; pos++) {
+      let l = 0;
+      let r = 0;
+      while (l + r < Math.min(matches, n - 1)) {
+        if (pos - l - 1 < 0) r += 1;
+        else if (pos + r + 1 > n - 1) l += 1;
+        else {
+          const dl = x[pos] - x[pos - l - 1];
+          const dr = x[pos + r + 1] - x[pos];
+          const tol = Math.max(dl, dr) * eps;
+          if (dl - dr > tol) r += 1;
+          else if (dr - dl > tol) l += 1;
+          else {
+            r += 1;
+            l += 1;
+          }
+        }
+      }
+      let sum = 0;
+      for (let i = pos - l; i <= pos + r; i++) sum += y[i];
+      const J = l + r;
+      res[pos] = Math.sqrt(J / (J + 1)) * (y[pos] - (sum - y[pos]) / J);
+    }
+    return res;
+  };
+
+  const oneSide = (keep) => {
+    const idx = [];
+    for (let i = 0; i < xs.length; i++) if (keep(xs[i]) && Math.abs(xs[i]) < h) idx.push(i);
+    idx.sort((a, b) => xs[a] - xs[b]);
+    const x = idx.map((i) => xs[i]);
+    const y = idx.map((i) => ys[i]);
+    const n = x.length;
+    if (n < 5) return null;
+
+    const w = x.map((v) => (1 - Math.abs(v / h)) / h);
+    const Gq = [[0, 0, 0], [0, 0, 0], [0, 0, 0]];
+    const L = [0, 0];
+    for (let i = 0; i < n; i++) {
+      const r = [1, x[i], x[i] * x[i]];
+      for (let a = 0; a < 3; a++) for (let b = 0; b < 3; b++) Gq[a][b] += w[i] * r[a] * r[b];
+      const u2 = (x[i] / h) ** 2;
+      L[0] += w[i] * u2;
+      L[1] += w[i] * x[i] * u2;
+    }
+    const invGq = inv(Gq);
+    const invGp = inv([[Gq[0][0], Gq[0][1]], [Gq[1][0], Gq[1][1]]]);
+
+    // Rows of R_p * W_h and of Q_q (the bias-corrected weights).
+    const P = new Array(n);
+    const Q = new Array(n);
+    for (let i = 0; i < n; i++) {
+      const a = w[i] * (invGq[2][0] + invGq[2][1] * x[i] + invGq[2][2] * x[i] * x[i]);
+      P[i] = [w[i], w[i] * x[i]];
+      Q[i] = [P[i][0] - h * h * a * L[0], P[i][1] - h * h * a * L[1]];
+    }
+
+    const res = nnResiduals(x, y, 3);
+    const sumP = [0, 0];
+    const sumQ = [0, 0];
+    const Mcl = [[0, 0], [0, 0]];
+    const Mrb = [[0, 0], [0, 0]];
+    for (let i = 0; i < n; i++) {
+      const e2 = res[i] * res[i];
+      for (let a = 0; a < 2; a++) {
+        sumP[a] += P[i][a] * y[i];
+        sumQ[a] += Q[i][a] * y[i];
+        for (let b = 0; b < 2; b++) {
+          Mcl[a][b] += e2 * P[i][a] * P[i][b];
+          Mrb[a][b] += e2 * Q[i][a] * Q[i][b];
+        }
+      }
+    }
+    const row0 = invGp[0];
+    const quad = (M) => row0[0] * (M[0][0] * row0[0] + M[0][1] * row0[1]) + row0[1] * (M[1][0] * row0[0] + M[1][1] * row0[1]);
+    return {
+      n,
+      intercept: row0[0] * sumP[0] + row0[1] * sumP[1],
+      slope: invGp[1][0] * sumP[0] + invGp[1][1] * sumP[1],
+      interceptBc: row0[0] * sumQ[0] + row0[1] * sumQ[1],
+      varCl: quad(Mcl),
+      varRb: quad(Mrb),
+    };
+  };
+
+  const left = oneSide((v) => v < 0);
+  const right = oneSide((v) => v >= 0);
+  if (!left || !right) return null;
+  const z = 1.959963984540054;
+  const tauCl = right.intercept - left.intercept;
+  const tauBc = right.interceptBc - left.interceptBc;
+  const seCl = Math.sqrt(left.varCl + right.varCl);
+  const seRb = Math.sqrt(left.varRb + right.varRb);
+  return { left, right, tauCl, tauBc, seCl, seRb, ciRb: [tauBc - z * seRb, tauBc + z * seRb], ciCl: [tauCl - z * seCl, tauCl + z * seCl] };
+}
+// <<< estimator
+
 // ---------- Regression discontinuity plot (home page) ----------
 // Simulated data only. Design: Model 1 in Calonico, Cattaneo and Titiunik (2014),
 // X = 2 * Beta(2, 4) - 1, with the design's noise sd (0.1295) and jump (0.04) as the
-// starting values. The controls change the jump, the noise, the sample size, the order
-// of the polynomial fit, and whether the raw observations are drawn.
+// starting values. The controls change the jump, the noise, the sample size, the
+// bandwidth of the local linear estimate, the order of the global polynomial fit, and
+// whether the raw observations are drawn.
 
 (function () {
   const svg = document.getElementById("rd-plot");
@@ -22,11 +151,16 @@ window.addEventListener("beforeprint", openFolds);
   const NS = "http://www.w3.org/2000/svg";
   const BINS_LEFT = 20;
   const BINS_RIGHT = 14;
-  const state = { seed: 7, jump: 0.04, sigma: 0.1295, n: 1000, order: 4, raw: true };
+  const state = { seed: 7, jump: 0.04, sigma: 0.1295, n: 1000, h: 0.2, order: 4, raw: true };
 
   const byId = (id) => document.getElementById(id);
   const estimateNode = byId("rd-est");
   const trueNode = byId("rd-true");
+  const ciNode = byId("rd-ci");
+  const coverNode = byId("rd-cover");
+  const windowNode = byId("rd-window");
+  const callNode = byId("rd-call");
+  const fmt = (v) => v.toFixed(2).replace("-", "−");
 
   const mu = (x) =>
     x < 0
@@ -134,7 +268,10 @@ window.addEventListener("beforeprint", openFolds);
     svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
     svg.replaceChildren();
 
-    // Raw observations, behind everything else
+    // The bandwidth window around the cutoff
+    el("rect", { class: "rd-window", x: sx(-state.h), y: m.t, width: sx(state.h) - sx(-state.h), height: sy(yMin) - m.t });
+
+    // Raw observations
     if (state.raw) {
       for (const p of points) {
         if (p.y < yMin || p.y > yMax) continue;
@@ -169,25 +306,44 @@ window.addEventListener("beforeprint", openFolds);
     const radius = W < 400 ? 2.6 : 3.2;
     for (const d of dots) el("circle", { class: "rd-dot", cx: sx(d.x), cy: sy(clampY(d.y)), r: radius });
 
-    // Polynomial fit on each side, drawn over the range of the data
-    const atCutoff = [];
+    // Global polynomial fit on each side (the usual RD plot), drawn thin
     for (const [side, from, to] of [
       [left, Math.min(...left.map((p) => p.x)), 0],
       [right, 0, Math.max(...right.map((p) => p.x))],
     ]) {
       const fit = polyfit(side, state.order);
-      atCutoff.push(fit(0));
       let path = "";
       for (let i = 0; i <= 80; i++) {
         const x = from + ((to - from) * i) / 80;
         path += `${i ? "L" : "M"}${sx(x).toFixed(1)} ${sy(clampY(fit(x))).toFixed(1)}`;
       }
-      el("path", { class: "rd-fit", d: path });
+      el("path", { class: "rd-global", d: path });
     }
 
-    // The gap between the two fitted curves at the cutoff, next to the true value.
-    if (estimateNode) estimateNode.textContent = (atCutoff[1] - atCutoff[0]).toFixed(2).replace("-", "−");
+    // Local linear fit inside the bandwidth, and the estimate with its robust interval
+    const rd = rdRobust(points.map((p) => p.x), points.map((p) => p.y), state.h);
+    if (rd) {
+      for (const [fit, from, to] of [
+        [rd.left, -state.h, 0],
+        [rd.right, 0, state.h],
+      ]) {
+        el("line", {
+          class: "rd-fit",
+          x1: sx(from), y1: sy(clampY(fit.intercept + fit.slope * from)),
+          x2: sx(to), y2: sy(clampY(fit.intercept + fit.slope * to)),
+        });
+      }
+    }
+    if (estimateNode) estimateNode.textContent = rd ? fmt(rd.tauCl) : "n/a";
     if (trueNode) trueNode.textContent = state.jump.toFixed(2);
+    if (ciNode) ciNode.textContent = rd ? `[${fmt(rd.ciRb[0])}, ${fmt(rd.ciRb[1])}]` : "n/a";
+    if (coverNode) {
+      const covers = rd && rd.ciRb[0] <= state.jump && state.jump <= rd.ciRb[1];
+      coverNode.textContent = !rd ? "too few observations inside the bandwidth" : covers ? "covers the true jump" : "misses the true jump";
+      coverNode.dataset.covers = rd ? String(covers) : "";
+    }
+    if (windowNode) windowNode.textContent = rd ? `${rd.left.n} observations to the left and ${rd.right.n} to the right` : "";
+    if (callNode) callNode.textContent = `rdrobust(y, x, h = ${state.h.toFixed(2)})`;
   }
 
   // Controls
@@ -206,6 +362,7 @@ window.addEventListener("beforeprint", openFolds);
   bind("rd-jump", "jump", (i) => Number(i.value), (v) => v.toFixed(2));
   bind("rd-noise", "sigma", (i) => Number(i.value), (v) => v.toFixed(2));
   bind("rd-n", "n", (i) => Number(i.value));
+  bind("rd-h", "h", (i) => Number(i.value), (v) => v.toFixed(2));
   bind("rd-order", "order", (i) => Number(i.value));
   bind("rd-raw", "raw", (i) => i.checked);
 
