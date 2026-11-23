@@ -1,65 +1,27 @@
 # Personal Website
 
-This repository contains a static personal website for Sebastian Calonico. It is designed for GitHub Pages and does not require a build step.
+Static personal website for Sebastian Calonico, published with GitHub Pages at
+https://scalonico.github.io/. There is no build step: pushing to `main` publishes the site.
 
 ## Files
 
-- `index.html` is the publish-ready homepage.
+- `index.html` is the home page (bio and an interactive regression discontinuity plot).
 - `research.html` (working papers), `publications.html`, `software.html`, and `teaching.html` are the section pages.
 - `contact.html` and the `standard-*.html` files are redirects that keep earlier page URLs working.
-- `site.css` contains the styling; `site.js` sets the footer year, opens folded lists for find-in-page, and draws the home page plot.
-- `CV/resume.tex` is the CV source; build `CV/resume.pdf` with `pdflatex` (twice).
+- `site.css` contains the styling. `site.js` sets the footer year, opens folded lists for find-in-page, and draws the home page plot.
+- `analytics.js` loads Google Analytics.
+- `photo.jpg` and `favicon.svg` are the portrait and the browser-tab icon.
+- `CV/resume.tex` is the CV source.
 - `.nojekyll` tells GitHub Pages to serve the site directly as static files.
 
-## Best GitHub Setup
+## Updating the site
 
-The cleanest option is to create a repository named `scalonico.github.io`. If you do that, the site will publish at:
+- Every page repeats the same side column and top menu, so a change to either means editing all five pages.
+- After changing `site.css` or `site.js`, raise the `?v=` number on both in all five pages so browsers fetch the new file.
+- Add files to a commit by name. Do not use `git add .`: this folder can hold private documents that must not be published.
 
-`https://scalonico.github.io/`
+## Updating the CV
 
-If you use a different repository name, GitHub Pages will publish it at a project URL such as:
-
-`https://scalonico.github.io/repository-name/`
-
-## Exact Commands
-
-Run these from this folder after creating the GitHub repository:
-
-```powershell
-git init -b main
-git add .
-git commit -m "Initial personal website"
-git remote add origin https://github.com/scalonico/scalonico.github.io.git
-git push -u origin main
-```
-
-If the repository already exists and was initialized on GitHub with a README or license, use:
-
-```powershell
-git init -b main
-git add .
-git commit -m "Initial personal website"
-git remote add origin https://github.com/scalonico/scalonico.github.io.git
-git pull origin main --allow-unrelated-histories
-git push -u origin main
-```
-
-## GitHub Pages Settings
-
-1. Open the repository on GitHub.
-2. Go to `Settings`.
-3. Click `Pages`.
-4. Under `Build and deployment`, choose `Deploy from a branch`.
-5. Select branch `main`.
-6. Select folder `/ (root)`.
-7. Click `Save`.
-
-GitHub usually publishes within a minute or two. The live URL for a user site repository should be:
-
-`https://scalonico.github.io/`
-
-## Suggested Next Edits
-
-- Replace the selected publications with your preferred shortlist.
-- Add a headshot if you want a more personal landing page.
-- Add teaching, advising, or service sections if you want the site to function as a fuller academic profile.
+1. Edit `CV/resume.tex`.
+2. Run `pdflatex resume.tex` twice in `CV/`.
+3. Copy `CV/resume.pdf` to `CV/Calonico_CV.pdf`, which keeps an older link working.
