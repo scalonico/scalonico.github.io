@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  22 NOV 2026 21:20
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  22 NOV 2026 21:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -850,14 +850,16 @@ Package microtype Info: Loading generic protrusion settings for font family
 [6]
 
 [7]
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 8.0pt on input line 545.
+
 
 [8]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 8.0pt on input line 590.
 
 
-[9{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}]
-(./resume.aux)
+[9] (./resume.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
@@ -866,25 +868,24 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: 4917551EF143ACB85BC7FF61A32C11AF;1822.
  ) 
 Here is how much of TeX's memory you used:
- 20449 strings out of 473190
- 333092 string characters out of 5715801
+ 20452 strings out of 473190
+ 333234 string characters out of 5715801
  740710 words of memory out of 5000000
- 43249 multiletter control sequences out of 15000+600000
- 618220 words of font info for 144 fonts, out of 8000000 for 9000
+ 43251 multiletter control sequences out of 15000+600000
+ 619969 words of font info for 143 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  80i,12n,93p,1421b,646s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
 me5Brands-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fo
 ntawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2025/texmf-dist/fonts
-/type1/public/newpx/NewPXMI.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1
-/public/txfonts/t1xtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/publi
-c/newpx/zplb.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newpx/z
-plbi.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newpx/zplr.pfb>
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on resume.pdf (9 pages, 197592 bytes).
+/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1
+/public/newpx/zplb.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/n
+ewpx/zplbi.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newpx/zpl
+r.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
+Output written on resume.pdf (9 pages, 191657 bytes).
 PDF statistics:
- 273 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
+ 264 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
  77 named destinations out of 1000 (max. 500000)
- 30817 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 32865 words of extra memory for PDF output out of 35830 (max. 10000000)
 
