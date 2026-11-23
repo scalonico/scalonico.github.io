@@ -4,11 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sebastian Calonico | Econometrics &amp; Causal Inference</title>
-    <meta
-      name="description"
-      content="Sebastian Calonico is an econometrician and Assistant Professor at UC Davis specializing in causal inference, regression discontinuity designs, and data analytics."
-    />
-    <meta name="theme-color" content="#f3efe7" />
+    <meta name="description" content="Sebastian Calonico is an econometrician at UC Davis working on causal inference and regression discontinuity designs." />
+    <meta name="theme-color" content="#fbfaf7" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Sebastian Calonico | Econometrics &amp; Causal Inference" />
     <meta property="og:description" content="Research, publications, and software in econometrics, causal inference, and data analytics." />
@@ -43,127 +40,84 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./standard-styles.css?v=7" />
-    <script src="./analytics.js?v=2"></script>
+    <link rel="stylesheet" href="./site.css?v=1" />
+    <script src="./site.js?v=1" defer></script>
+    <script src="./analytics.js?v=2" defer></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
-
-    <header class="masthead">
-      <div class="masthead-inner">
-        <a class="identity" href="./index.html" aria-label="Sebastian Calonico, homepage">
-          <span class="identity-mark" aria-hidden="true">SC</span>
-          <span>
-            <strong>Sebastian Calonico</strong>
-            <small>Econometrician · UC Davis</small>
-          </span>
-        </a>
-
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="draft-nav">
-          Menu
-        </button>
-
-        <nav class="ledger-nav" id="draft-nav" aria-label="Primary" data-open="false">
-          <a class="is-active" aria-current="page" href="./index.html"><span>01</span> About</a>
-          <a href="./publications.html"><span>02</span> Publications</a>
-          <a href="./research.html"><span>03</span> Research</a>
-          <a href="./teaching.html"><span>04</span> Teaching</a>
-          <a href="./software.html"><span>05</span> Software</a>
-          <a href="./contact.html"><span>06</span> Contact</a>
-        </nav>
-      </div>
-    </header>
-
-    <main id="main-content">
-      <section class="hero ledger-width" id="about">
-        <div class="hero-copy">
-          <p class="folio">Assistant Professor of Business Analytics</p>
-          <h1>Sebastian Calonico</h1>
-          <p class="hero-role">Graduate School of Management · University of California, Davis</p>
-          <p class="hero-lede">
-            I develop econometric methods and open-source software for causal inference,
-            with particular interests in regression discontinuity designs, treatment
-            effects, and nonparametric inference.
+  <body class="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="shell">
+      <aside class="side">
+        <div class="side-top">
+          <a class="side-photo" href="./index.html" aria-label="Home"><img src="./photo.jpg" alt="Sebastian Calonico" width="320" height="320" /></a>
+          <h1 class="side-name">Sebastian Calonico</h1>
+          <p class="side-role">
+            Assistant Professor of Business Analytics<br />
+            Graduate School of Management<br />
+            University of California, Davis
           </p>
-          <div class="hero-links" aria-label="Profile links">
-            <a href="./CV/resume.pdf" target="_blank" rel="noopener noreferrer">Curriculum Vitae <span>↗</span></a>
-            <a href="https://scholar.google.com/citations?user=rpUAhZ8AAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar <span>↗</span></a>
-            <a href="https://github.com/scalonico" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
-          </div>
+          <ul class="side-links" aria-label="Contact and profile links">
+            <li><a href="mailto:scalonico@ucdavis.edu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 6-10 7L2 6" /></svg>scalonico@ucdavis.edu</a></li>
+            <li><a href="./CV/resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><path d="M14 2v6h6M8 13h8M8 17h8" /></svg>Curriculum vitae</a></li>
+            <li><a href="https://scholar.google.com/citations?user=rpUAhZ8AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" /></svg>Google Scholar</a></li>
+            <li><a href="https://github.com/scalonico" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" /></svg>GitHub</a></li>
+          </ul>
         </div>
+      </aside>
 
-        <aside class="hero-figure hero-recent" aria-labelledby="hero-recent-title">
-          <div class="hero-recent-heading">
-            <h2 id="hero-recent-title">Recent research</h2>
-            <a href="./research.html">View all <span>→</span></a>
+      <div class="content">
+        <header class="top">
+          <nav aria-label="Primary">
+            <a href="./index.html" aria-current="page">Home</a>
+            <a href="./research.html">Working Papers</a>
+            <a href="./publications.html">Publications</a>
+            <a href="./software.html">Software</a>
+            <a href="./teaching.html">Teaching</a>
+            <a href="./CV/resume.pdf" target="_blank" rel="noopener">CV</a>
+          </nav>
+        </header>
+        <main id="main">
+          <div class="prose">
+            <p>
+              I am an econometrician at the Graduate School of Management, University of
+              California, Davis. My research covers econometrics and
+              statistics, with a particular interest in program evaluation and causal inference
+              methodology, with applications to public health and public policy. My recent
+              research focuses on estimation and inference for regression discontinuity designs,
+              treatment effects and program evaluation methods more generally.
+            </p>
+            <p>
+              I have published in leading journals in economics and statistics, including
+              <cite>Econometrica</cite>, <cite>Review of Economics and Statistics</cite> and
+              <cite>Journal of the American Statistical Association</cite>. My work has also
+              appeared in leading medical and public health journals, including
+              <cite>JAMA</cite>, <cite>BMJ</cite> and <cite>The Lancet Public Health</cite>.
+            </p>
+            <p>
+              I am originally from Haedo, Buenos Aires, Argentina. I studied economics at the
+              Universidad de Buenos Aires and the Universidad Torcuato Di Tella, and received my
+              Ph.D. in Economics from the University of Michigan in 2014. Before joining UC Davis,
+              I was an Assistant Professor at Columbia University (2019–2024) and at the
+              University of Miami (2014–2019).
+            </p>
           </div>
-          <div class="hero-research-list">
-            <article>
-              <p class="hero-paper-meta">2026 · NBER 34050 · Revised</p>
-              <h3><a href="https://www.nber.org/papers/w34050">Beyond Bonferroni: Multiple Testing in Empirical Research</a></h3>
-              <p>With Sebastian Galiani.</p>
-            </article>
-            <article>
-              <p class="hero-paper-meta">2026 · Software paper</p>
-              <h3><a href="https://drive.google.com/file/d/10r3VhQ8mBtwfyswYNF2-ULR7TvOTbRC-/view">mht: Multiple-Hypothesis Testing in Stata</a></h3>
-              <p>With Sebastian Galiani and Raul A. Sosa.</p>
-            </article>
-            <article>
-              <p class="hero-paper-meta">2026 · Working paper</p>
-              <h3><a href="https://rdpackages.github.io/rdhte/">Treatment Effect Heterogeneity in Regression Discontinuity Designs</a></h3>
-              <p>With Matias Cattaneo, Max Farrell, Filippo Palomba, and Rocio Titiunik.</p>
-            </article>
-            <article>
-              <p class="hero-paper-meta">2026 · Software paper</p>
-              <h3><a href="https://rdpackages.github.io/rdhte/">rdhte: Conditional Average Treatment Effects in RD Designs</a></h3>
-              <p>Estimation and inference for heterogeneous treatment effects in RD designs.</p>
-            </article>
-          </div>
-        </aside>
-      </section>
 
-      <section class="ledger-section ledger-width background-section" id="background" aria-labelledby="background-title">
-        <div class="section-content">
-          <div class="section-heading">
-            <h2 id="background-title">Appointments &amp; education</h2>
-          </div>
-          <div class="background-grid">
-            <article>
-              <p class="column-label">Appointments</p>
-              <div class="record-row"><span>2024—</span><p><strong>UC Davis</strong><br />Assistant Professor of Business Analytics</p></div>
-              <div class="record-row"><span>2019—24</span><p><strong>Columbia University</strong><br />Assistant Professor</p></div>
-              <div class="record-row"><span>2014—19</span><p><strong>University of Miami</strong><br />Assistant Professor</p></div>
-            </article>
-            <article>
-              <p class="column-label">Education</p>
-              <div class="record-row"><span>2014</span><p><strong>University of Michigan</strong><br />Ph.D. in Economics</p></div>
-              <div class="record-row"><span>2005</span><p><strong>Universidad Torcuato Di Tella</strong><br />Master in Economics</p></div>
-              <div class="record-row"><span>2002</span><p><strong>Universidad de Buenos Aires</strong><br />Licentiate in Economics</p></div>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="ledger-width footer-inner">
-        <p>Sebastian Calonico <span>—</span> Econometrics · Causal Inference · Data Analytics</p>
-        <p>University of California, Davis</p>
+          <figure class="rd">
+            <svg id="rd-plot" role="img" aria-labelledby="rd-caption"></svg>
+            <figcaption>
+              <span id="rd-caption">Regression discontinuity plot, simulated data.</span>
+              <button type="button" id="rd-resample">Draw a new sample</button>
+            </figcaption>
+          </figure>
+        </main>
+        <footer class="foot">
+          <p>Graduate School of Management, UC Davis · One Shields Avenue, Davis, CA 95616</p>
+          <p>&copy; <span id="year">2026</span> Sebastian Calonico</p>
+        </footer>
       </div>
-    </footer>
-
-    <script>
-      const menuButton = document.querySelector('.menu-toggle');
-      const menu = document.querySelector('.ledger-nav');
-
-      menuButton?.addEventListener('click', () => {
-        const open = menuButton.getAttribute('aria-expanded') === 'true';
-        menuButton.setAttribute('aria-expanded', String(!open));
-        menu.dataset.open = String(!open);
-      });
-    </script>
+    </div>
   </body>
 </html>

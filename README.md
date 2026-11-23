@@ -5,10 +5,10 @@ This repository contains a static personal website for Sebastian Calonico. It is
 ## Files
 
 - `index.html` is the publish-ready homepage.
-- `publications.html`, `research.html`, `teaching.html`, `software.html`, and `contact.html` are the additional section pages.
-- `standard-*.html` files preserve redirects from the earlier page URLs.
-- `standard-styles.css` contains the styling for the standard published site.
-- `standard-script.js` adds the footer year and mobile navigation behavior.
+- `research.html` (working papers), `publications.html`, `software.html`, and `teaching.html` are the section pages.
+- `contact.html` and the `standard-*.html` files are redirects that keep earlier page URLs working.
+- `site.css` contains the styling; `site.js` sets the footer year, opens folded lists for find-in-page, and draws the home page plot.
+- `CV/resume.tex` is the CV source; build `CV/resume.pdf` with `pdflatex` (twice).
 - `.nojekyll` tells GitHub Pages to serve the site directly as static files.
 
 ## Best GitHub Setup

@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#003a5d"/>
-  <text x="32" y="43" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-size="34" font-weight="700">SC</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs><clipPath id="c"><rect width="32" height="32" rx="5"/></clipPath></defs>
+  <g clip-path="url(#c)">
+    <rect width="32" height="32" fill="#fff"/>
+    <path d="M19 0h12L13 32H1z" fill="#e2001a"/>
+  </g>
+  <rect x=".5" y=".5" width="31" height="31" rx="4.5" fill="none" stroke="#d9d4ca"/>
 </svg>

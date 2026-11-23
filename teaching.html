@@ -5,91 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teaching | Sebastian Calonico</title>
     <meta name="description" content="University teaching and workshops by Sebastian Calonico in econometrics, causal inference, and data analytics." />
+    <meta name="theme-color" content="#fbfaf7" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Teaching | Sebastian Calonico" />
+    <meta property="og:description" content="University teaching and workshops by Sebastian Calonico in econometrics, causal inference, and data analytics." />
+    <meta property="og:url" content="https://scalonico.github.io/teaching.html" />
     <link rel="canonical" href="https://scalonico.github.io/teaching.html" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./standard-styles.css?v=7" />
-    <script src="./analytics.js?v=2"></script>
+    <link rel="stylesheet" href="./site.css?v=1" />
+    <script src="./site.js?v=1" defer></script>
+    <script src="./analytics.js?v=2" defer></script>
   </head>
-  <body>
-    <a class="skip-link" href="#main-content">Skip to content</a>
-    <header class="site-header">
-      <div class="header-inner">
-        <div class="site-title-block">
-          <a class="site-title" href="./index.html">Sebastian Calonico</a>
-          <div class="site-subtitle">
-            <p>Econometrician · UC Davis</p>
+  <body class="inner">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="shell">
+      <aside class="side">
+        <div class="side-top">
+          <a class="side-photo" href="./index.html" aria-label="Home"><img src="./photo.jpg" alt="Sebastian Calonico" width="320" height="320" /></a>
+          <p class="side-name"><a href="./index.html">Sebastian Calonico</a></p>
+          <p class="side-role">
+            Assistant Professor of Business Analytics<br />
+            Graduate School of Management<br />
+            University of California, Davis
+          </p>
+          <ul class="side-links" aria-label="Contact and profile links">
+            <li><a href="mailto:scalonico@ucdavis.edu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 6-10 7L2 6" /></svg>scalonico@ucdavis.edu</a></li>
+            <li><a href="./CV/resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><path d="M14 2v6h6M8 13h8M8 17h8" /></svg>Curriculum vitae</a></li>
+            <li><a href="https://scholar.google.com/citations?user=rpUAhZ8AAAAJ" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" /></svg>Google Scholar</a></li>
+            <li><a href="https://github.com/scalonico" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" /></svg>GitHub</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="content">
+        <header class="top">
+          <nav aria-label="Primary">
+            <a href="./index.html">Home</a>
+            <a href="./research.html">Working Papers</a>
+            <a href="./publications.html">Publications</a>
+            <a href="./software.html">Software</a>
+            <a href="./teaching.html" aria-current="page">Teaching</a>
+            <a href="./CV/resume.pdf" target="_blank" rel="noopener">CV</a>
+          </nav>
+        </header>
+        <main id="main">
+          <header class="page-head">
+            <h1>Teaching</h1>
+          </header>
+          <div class="two-grid">
+          <div>
+            <h2 class="sec">Courses</h2>
+            <dl class="record">
+              <div><dt>MBA</dt><dd><strong>Data Analysis for Managers</strong>UC Davis</dd></div>
+              <div><dt>MHA</dt><dd><strong>Analytics for Decision-Making II</strong>Columbia University</dd></div>
+              <div><dt>MPH</dt><dd><strong>Economics of Prevention</strong>Columbia University</dd></div>
+              <div><dt>PhD</dt><dd><strong>Econometrics</strong>University of Miami</dd></div>
+              <div><dt>UG</dt><dd><strong>Econometrics and Labor Economics</strong>University of Miami</dd></div>
+            </dl>
           </div>
-        </div>
-        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">Menu</button>
-        <nav class="site-nav" id="site-nav" aria-label="Primary" data-open="false">
-          <a href="./index.html">About</a>
-          <a href="./publications.html">Publications</a>
-          <a href="./research.html">Research</a>
-          <a class="is-active" aria-current="page" href="./teaching.html">Teaching</a>
-          <a href="./software.html">Software</a>
-          <a href="./contact.html">Contact</a>
-        </nav>
+          <div>
+            <h2 class="sec">Short courses and workshops</h2>
+            <dl class="record wide">
+              <div>
+                <dt>2023–2026</dt>
+                <dd><strong>Causal Inference for Social Sciences II</strong><a class="who" href="https://www.icpsr.umich.edu/sites/ICPSR/sumprog" target="_blank" rel="noopener">University of Michigan ICPSR Summer Program</a></dd>
+              </div>
+              <div>
+                <dt>2025</dt>
+                <dd><strong>Second Winter School in Advanced Methods for Social Sciences</strong><a class="who" href="https://qlab.pucp.edu.pe/" target="_blank" rel="noopener">PUCP-QLAB</a>, Lima, Peru</dd>
+              </div>
+              <div>
+                <dt>2024</dt>
+                <dd><strong>Program Evaluation</strong>Late Life Learning, Cognition and Aging (3LC) Study, American University of Beirut</dd>
+              </div>
+              <div>
+                <dt>2017–2024</dt>
+                <dd><strong>Regression Discontinuity Designs</strong><a class="who" href="https://www.icpsr.umich.edu/sites/ICPSR/sumprog" target="_blank" rel="noopener">University of Michigan ICPSR Summer Program</a></dd>
+              </div>
+              <div>
+                <dt>2021</dt>
+                <dd><strong>Impact Evaluation Econometrics</strong>Master in Economics, Universidad de Montevideo, Uruguay</dd>
+              </div>
+              <div>
+                <dt>2020</dt>
+                <dd><strong>Empirical Methods in Causal Inference</strong>Lima School of Economics, Lima, Peru</dd>
+              </div>
+              <div>
+                <dt>2017</dt>
+                <dd><strong>Regression Discontinuity Designs</strong>Group for the Analysis of Development (GRADE), Lima, Peru</dd>
+              </div>
+              <div>
+                <dt>2017</dt>
+                <dd><strong>Regression Discontinuity Designs</strong>Winter School in Methods and Data Analysis, Universidad Católica del Uruguay</dd>
+              </div>
+            </dl>
+          </div>
+          </div>
+        </main>
+        <footer class="foot">
+          <p>Graduate School of Management, UC Davis · One Shields Avenue, Davis, CA 95616</p>
+          <p>&copy; <span id="year">2026</span> Sebastian Calonico</p>
+        </footer>
       </div>
-    </header>
-    <main class="page" id="main-content">
-      <section class="content-section">
-        <div class="section-header">
-          <p class="section-kicker">Courses &amp; workshops</p>
-          <h1 class="page-title">Teaching</h1>
-        </div>
-        <div class="two-column">
-          <article class="content-card">
-            <h3>University Teaching</h3>
-            <div class="entry-list teaching-summary">
-              <div class="entry-item">
-                <h4>UC Davis</h4>
-                <p class="teaching-row">
-                  <span class="teaching-tag">MBA</span>
-                  <span>Data Analysis for Managers</span>
-                </p>
-              </div>
-              <div class="entry-item">
-                <h4>Columbia University</h4>
-                <p class="teaching-row">
-                  <span class="teaching-tag">MHA</span>
-                  <span>Analytics for Decision-Making II</span>
-                </p>
-                <p class="teaching-row">
-                  <span class="teaching-tag">MPH</span>
-                  <span>Economics of Prevention</span>
-                </p>
-              </div>
-              <div class="entry-item">
-                <h4>University of Miami</h4>
-                <p class="teaching-row">
-                  <span class="teaching-tag">PhD</span>
-                  <span>Econometrics</span>
-                </p>
-                <p class="teaching-row">
-                  <span class="teaching-tag">UG</span>
-                  <span>Econometrics and Labor Economics</span>
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="content-card">
-            <h3>Recent and Upcoming Workshops</h3>
-            <ul class="standard-list">
-              <li>2023–2026: Causal Inference for Social Sciences II, <a href="https://www.icpsr.umich.edu/sites/ICPSR/sumprog" target="_blank" rel="noopener noreferrer">ICPSR Summer Program</a>.</li>
-              <li>2025: Second Winter School in Advanced Methods for Social Sciences, <a href="https://qlab.pucp.edu.pe/" target="_blank" rel="noopener noreferrer">QLAB</a>, Pontificia Universidad Catolica del Peru.</li>
-              <li>2017–2024: Regression Discontinuity Designs, <a href="https://www.icpsr.umich.edu/sites/ICPSR/sumprog" target="_blank" rel="noopener noreferrer">ICPSR Summer Program</a>.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
-    </main>
-    <footer class="site-footer"><p>&copy; <span id="year"></span> Sebastian Calonico</p></footer>
-    <script src="./standard-script.js?v=2"></script>
+    </div>
   </body>
 </html>
