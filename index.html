@@ -43,8 +43,8 @@
       href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./site.css?v=1" />
-    <script src="./site.js?v=1" defer></script>
+    <link rel="stylesheet" href="./site.css?v=2" />
+    <script src="./site.js?v=2" defer></script>
     <script src="./analytics.js?v=2" defer></script>
   </head>
   <body class="home">
@@ -108,8 +108,18 @@
           <figure class="rd">
             <svg id="rd-plot" role="img" aria-labelledby="rd-caption"></svg>
             <figcaption>
-              <span id="rd-caption">Regression discontinuity plot, simulated data.</span>
-              <button type="button" id="rd-resample">Draw a new sample</button>
+              <p id="rd-caption">Regression discontinuity plot, simulated data.</p>
+              <p class="rd-readout" aria-live="polite">
+                Estimated jump <strong id="rd-est">0.04</strong>
+                <span aria-hidden="true">·</span>
+                true jump <strong id="rd-true">0.04</strong>
+              </p>
+              <div class="rd-controls">
+                <label for="rd-jump">True jump</label>
+                <input type="range" id="rd-jump" min="0" max="0.3" step="0.01" value="0.04" />
+                <button type="button" id="rd-resample">Draw a new sample</button>
+              </div>
+              <p class="rd-note">The estimate is the gap between the two fitted curves at the cutoff. It is not a bias-corrected estimate.</p>
             </figcaption>
           </figure>
         </main>

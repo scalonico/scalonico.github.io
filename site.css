@@ -312,9 +312,39 @@ section:first-of-type > .sec,
   font-size: var(--small);
 }
 
+.rd-readout {
+  margin-top: 0.5rem;
+  color: var(--ink);
+  font-size: 0.95rem;
+}
+
+.rd-readout strong {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.rd-readout span {
+  margin: 0 0.3rem;
+  color: var(--muted);
+}
+
+.rd-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+
+.rd-controls input[type="range"] {
+  flex: 1 1 9rem;
+  max-width: 14rem;
+  accent-color: var(--accent);
+}
+
 .rd button {
-  margin-left: 0.4rem;
-  padding: 0;
+  margin-left: auto;
+  padding: 0.3rem 0;
   border: 0;
   color: var(--accent);
   background: none;
@@ -325,6 +355,10 @@ section:first-of-type > .sec,
 
 .rd button:hover {
   text-decoration: underline;
+}
+
+.rd-note {
+  margin-top: 0.5rem;
 }
 
 .rd-axis {

@@ -11,7 +11,8 @@ window.addEventListener("beforeprint", openFolds);
 
 // ---------- Regression discontinuity plot (home page) ----------
 // Simulated data only. Design: Model 1 in Calonico, Cattaneo and Titiunik (2014),
-// X = 2 * Beta(2, 4) - 1, noise sd 0.1295, true jump at the cutoff 0.04.
+// X = 2 * Beta(2, 4) - 1, noise sd 0.1295. The true jump at the cutoff starts at the
+// design's 0.04 and can be changed with the slider.
 
 (function () {
   const svg = document.getElementById("rd-plot");
@@ -23,13 +24,18 @@ window.addEventListener("beforeprint", openFolds);
   const BINS_LEFT = 20;
   const BINS_RIGHT = 14;
   const Y_MIN = 0;
-  const Y_MAX = 1.05;
+  const Y_MAX = 1.25;
   let seed = 7;
+  let jump = 0.04;
+
+  const slider = document.getElementById("rd-jump");
+  const estimateNode = document.getElementById("rd-est");
+  const trueNode = document.getElementById("rd-true");
 
   const mu = (x) =>
     x < 0
       ? 0.48 + 1.27 * x + 7.18 * x ** 2 + 20.21 * x ** 3 + 21.54 * x ** 4 + 7.33 * x ** 5
-      : 0.52 + 0.84 * x - 3.0 * x ** 2 + 7.99 * x ** 3 - 9.01 * x ** 4 + 3.56 * x ** 5;
+      : 0.48 + jump + 0.84 * x - 3.0 * x ** 2 + 7.99 * x ** 3 - 9.01 * x ** 4 + 3.56 * x ** 5;
 
   function rng(a) {
     return function () {
@@ -148,11 +154,13 @@ window.addEventListener("beforeprint", openFolds);
     for (const d of dots) el("circle", { class: "rd-dot", cx: sx(d.x), cy: sy(clampY(d.y)), r: radius });
 
     // Polynomial fit on each side, drawn over the range of the data
+    const atCutoff = [];
     for (const [side, from, to] of [
       [left, Math.min(...left.map((p) => p.x)), 0],
       [right, 0, Math.max(...right.map((p) => p.x))],
     ]) {
       const fit = polyfit(side, ORDER);
+      atCutoff.push(fit(0));
       let path = "";
       for (let i = 0; i <= 80; i++) {
         const x = from + ((to - from) * i) / 80;
@@ -160,6 +168,10 @@ window.addEventListener("beforeprint", openFolds);
       }
       el("path", { class: "rd-fit", d: path });
     }
+
+    // The gap between the two fitted curves at the cutoff, next to the true value.
+    if (estimateNode) estimateNode.textContent = (atCutoff[1] - atCutoff[0]).toFixed(2);
+    if (trueNode) trueNode.textContent = jump.toFixed(2);
   }
 
   draw();
@@ -173,6 +185,12 @@ window.addEventListener("beforeprint", openFolds);
 
   document.getElementById("rd-resample")?.addEventListener("click", () => {
     seed += 1;
+    draw();
+  });
+
+  // Moving the slider changes the true jump; the random draws stay the same.
+  slider?.addEventListener("input", () => {
+    jump = Number(slider.value);
     draw();
   });
 })();
