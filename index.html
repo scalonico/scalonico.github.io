@@ -43,8 +43,8 @@
       href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./site.css?v=2" />
-    <script src="./site.js?v=2" defer></script>
+    <link rel="stylesheet" href="./site.css?v=3" />
+    <script src="./site.js?v=3" defer></script>
     <script src="./analytics.js?v=2" defer></script>
   </head>
   <body class="home">
@@ -108,7 +108,7 @@
           <figure class="rd">
             <svg id="rd-plot" role="img" aria-labelledby="rd-caption"></svg>
             <figcaption>
-              <p id="rd-caption">Regression discontinuity plot, simulated data.</p>
+              <p id="rd-caption">Regression discontinuity plot, simulated data: raw observations, binned means and a polynomial fit on each side.</p>
               <p class="rd-readout" aria-live="polite">
                 Estimated jump <strong id="rd-est">0.04</strong>
                 <span aria-hidden="true">·</span>
@@ -117,6 +117,33 @@
               <div class="rd-controls">
                 <label for="rd-jump">True jump</label>
                 <input type="range" id="rd-jump" min="0" max="0.3" step="0.01" value="0.04" />
+                <output id="rd-jump-out" for="rd-jump">0.04</output>
+
+                <label for="rd-noise">Noise (sd)</label>
+                <input type="range" id="rd-noise" min="0.02" max="0.6" step="0.01" value="0.13" />
+                <output id="rd-noise-out" for="rd-noise">0.13</output>
+
+                <label for="rd-n">Sample size</label>
+                <select id="rd-n">
+                  <option value="200">200</option>
+                  <option value="500">500</option>
+                  <option value="1000" selected>1,000</option>
+                  <option value="2000">2,000</option>
+                  <option value="5000">5,000</option>
+                </select>
+                <span></span>
+
+                <label for="rd-order">Polynomial order</label>
+                <select id="rd-order">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4" selected>4</option>
+                </select>
+                <span></span>
+              </div>
+              <div class="rd-actions">
+                <label><input type="checkbox" id="rd-raw" checked /> Show raw data</label>
                 <button type="button" id="rd-resample">Draw a new sample</button>
               </div>
               <p class="rd-note">The estimate is the gap between the two fitted curves at the cutoff. It is not a bias-corrected estimate.</p>

@@ -11,31 +11,27 @@ window.addEventListener("beforeprint", openFolds);
 
 // ---------- Regression discontinuity plot (home page) ----------
 // Simulated data only. Design: Model 1 in Calonico, Cattaneo and Titiunik (2014),
-// X = 2 * Beta(2, 4) - 1, noise sd 0.1295. The true jump at the cutoff starts at the
-// design's 0.04 and can be changed with the slider.
+// X = 2 * Beta(2, 4) - 1, with the design's noise sd (0.1295) and jump (0.04) as the
+// starting values. The controls change the jump, the noise, the sample size, the order
+// of the polynomial fit, and whether the raw observations are drawn.
 
 (function () {
   const svg = document.getElementById("rd-plot");
   if (!svg) return;
 
   const NS = "http://www.w3.org/2000/svg";
-  const N = 1000;
-  const ORDER = 4;
   const BINS_LEFT = 20;
   const BINS_RIGHT = 14;
-  const Y_MIN = 0;
-  const Y_MAX = 1.25;
-  let seed = 7;
-  let jump = 0.04;
+  const state = { seed: 7, jump: 0.04, sigma: 0.1295, n: 1000, order: 4, raw: true };
 
-  const slider = document.getElementById("rd-jump");
-  const estimateNode = document.getElementById("rd-est");
-  const trueNode = document.getElementById("rd-true");
+  const byId = (id) => document.getElementById(id);
+  const estimateNode = byId("rd-est");
+  const trueNode = byId("rd-true");
 
   const mu = (x) =>
     x < 0
       ? 0.48 + 1.27 * x + 7.18 * x ** 2 + 20.21 * x ** 3 + 21.54 * x ** 4 + 7.33 * x ** 5
-      : 0.48 + jump + 0.84 * x - 3.0 * x ** 2 + 7.99 * x ** 3 - 9.01 * x ** 4 + 3.56 * x ** 5;
+      : 0.48 + state.jump + 0.84 * x - 3.0 * x ** 2 + 7.99 * x ** 3 - 9.01 * x ** 4 + 3.56 * x ** 5;
 
   function rng(a) {
     return function () {
@@ -47,15 +43,17 @@ window.addEventListener("beforeprint", openFolds);
     };
   }
 
-  function simulate(s) {
-    const u = rng(s);
+  // The random draws depend only on the seed, so moving a control changes the
+  // picture without reshuffling the points.
+  function simulate() {
+    const u = rng(state.seed);
     const points = [];
-    for (let i = 0; i < N; i++) {
+    for (let i = 0; i < state.n; i++) {
       // Beta(2, 4) is the second smallest of five uniforms.
       const five = [u(), u(), u(), u(), u()].sort((a, b) => a - b);
       const x = 2 * five[1] - 1;
       const z = Math.sqrt(-2 * Math.log(1 - u())) * Math.cos(2 * Math.PI * u());
-      points.push({ x, y: mu(x) + 0.1295 * z });
+      points.push({ x, y: mu(x) + state.sigma * z });
     }
     return points;
   }
@@ -114,42 +112,60 @@ window.addEventListener("beforeprint", openFolds);
   function draw() {
     const W = Math.max(280, Math.round(svg.clientWidth || 520));
     const H = Math.round(Math.min(340, Math.max(220, W * 0.56)));
-    const m = { l: 34, r: 10, t: 14, b: 40 };
+    const m = { l: 40, r: 10, t: 14, b: 40 };
+
+    const points = simulate();
+    const left = points.filter((p) => p.x < 0);
+    const right = points.filter((p) => p.x >= 0);
+    const dots = binMeans(left, -1, 0, BINS_LEFT).concat(binMeans(right, 0, 1, BINS_RIGHT));
+
+    // Vertical range: wide enough for what is drawn, rounded to quarters.
+    const shown = state.raw ? points.map((p) => p.y).sort((a, b) => a - b) : dots.map((d) => d.y).sort((a, b) => a - b);
+    const cut = state.raw ? Math.floor(shown.length * 0.005) : 0;
+    const lo = Math.min(0, shown[cut]);
+    const hi = Math.max(1, shown[shown.length - 1 - cut]);
+    const yMin = Math.floor((lo - 0.02) * 4) / 4;
+    const yMax = Math.ceil((hi + 0.05) * 4) / 4;
+
     const sx = (x) => m.l + ((x + 1) / 2) * (W - m.l - m.r);
-    const sy = (y) => m.t + (1 - (y - Y_MIN) / (Y_MAX - Y_MIN)) * (H - m.t - m.b);
-    const clampY = (y) => Math.min(Y_MAX, Math.max(Y_MIN, y));
+    const sy = (y) => m.t + (1 - (y - yMin) / (yMax - yMin)) * (H - m.t - m.b);
+    const clampY = (y) => Math.min(yMax, Math.max(yMin, y));
 
     svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
     svg.replaceChildren();
 
-    const points = simulate(seed);
-    const left = points.filter((p) => p.x < 0);
-    const right = points.filter((p) => p.x >= 0);
+    // Raw observations, behind everything else
+    if (state.raw) {
+      for (const p of points) {
+        if (p.y < yMin || p.y > yMax) continue;
+        el("circle", { class: "rd-raw", cx: sx(p.x).toFixed(1), cy: sy(p.y).toFixed(1), r: 1.4 });
+      }
+    }
 
     // Axes and ticks
-    el("line", { class: "rd-axis", x1: m.l, x2: W - m.r, y1: sy(Y_MIN), y2: sy(Y_MIN) });
-    el("line", { class: "rd-axis", x1: m.l, x2: m.l, y1: m.t, y2: sy(Y_MIN) });
+    el("line", { class: "rd-axis", x1: m.l, x2: W - m.r, y1: sy(yMin), y2: sy(yMin) });
+    el("line", { class: "rd-axis", x1: m.l, x2: m.l, y1: m.t, y2: sy(yMin) });
     for (const x of [-1, -0.5, 0, 0.5, 1]) {
-      el("line", { class: "rd-axis", x1: sx(x), x2: sx(x), y1: sy(Y_MIN), y2: sy(Y_MIN) + 4 });
+      el("line", { class: "rd-axis", x1: sx(x), x2: sx(x), y1: sy(yMin), y2: sy(yMin) + 4 });
       el(
         "text",
-        { class: "rd-tick", x: sx(x), y: sy(Y_MIN) + 18, "text-anchor": "middle" },
+        { class: "rd-tick", x: sx(x), y: sy(yMin) + 18, "text-anchor": "middle" },
         String(x).replace("-", "−")
       );
     }
-    for (const y of [0, 0.5, 1]) {
+    const step = yMax - yMin > 2 ? 1 : 0.5;
+    for (let y = Math.ceil(yMin / step) * step; y <= yMax + 1e-9; y += step) {
       el("line", { class: "rd-axis", x1: m.l - 4, x2: m.l, y1: sy(y), y2: sy(y) });
-      el("text", { class: "rd-tick", x: m.l - 8, y: sy(y) + 4, "text-anchor": "end" }, String(y));
+      el("text", { class: "rd-tick", x: m.l - 8, y: sy(y) + 4, "text-anchor": "end" }, String(+y.toFixed(2)).replace("-", "−"));
     }
     el("text", { class: "rd-tick", x: W - m.r, y: H - 4, "text-anchor": "end" }, "running variable");
     el("text", { class: "rd-tick", x: m.l + 8, y: m.t + 8 }, "outcome");
 
     // Cutoff
-    el("line", { class: "rd-cut", x1: sx(0), x2: sx(0), y1: m.t, y2: sy(Y_MIN) });
+    el("line", { class: "rd-cut", x1: sx(0), x2: sx(0), y1: m.t, y2: sy(yMin) });
     el("text", { class: "rd-cut-label", x: sx(0) + 7, y: m.t + 8 }, "cutoff");
 
     // Binned means
-    const dots = binMeans(left, -1, 0, BINS_LEFT).concat(binMeans(right, 0, 1, BINS_RIGHT));
     const radius = W < 400 ? 2.6 : 3.2;
     for (const d of dots) el("circle", { class: "rd-dot", cx: sx(d.x), cy: sy(clampY(d.y)), r: radius });
 
@@ -159,7 +175,7 @@ window.addEventListener("beforeprint", openFolds);
       [left, Math.min(...left.map((p) => p.x)), 0],
       [right, 0, Math.max(...right.map((p) => p.x))],
     ]) {
-      const fit = polyfit(side, ORDER);
+      const fit = polyfit(side, state.order);
       atCutoff.push(fit(0));
       let path = "";
       for (let i = 0; i <= 80; i++) {
@@ -170,9 +186,33 @@ window.addEventListener("beforeprint", openFolds);
     }
 
     // The gap between the two fitted curves at the cutoff, next to the true value.
-    if (estimateNode) estimateNode.textContent = (atCutoff[1] - atCutoff[0]).toFixed(2);
-    if (trueNode) trueNode.textContent = jump.toFixed(2);
+    if (estimateNode) estimateNode.textContent = (atCutoff[1] - atCutoff[0]).toFixed(2).replace("-", "−");
+    if (trueNode) trueNode.textContent = state.jump.toFixed(2);
   }
+
+  // Controls
+  function bind(id, key, read, show) {
+    const input = byId(id);
+    if (!input) return;
+    const out = byId(id + "-out");
+    const update = () => {
+      state[key] = read(input);
+      if (out) out.textContent = show ? show(state[key]) : String(state[key]);
+      draw();
+    };
+    input.addEventListener("input", update);
+    input.addEventListener("change", update);
+  }
+  bind("rd-jump", "jump", (i) => Number(i.value), (v) => v.toFixed(2));
+  bind("rd-noise", "sigma", (i) => Number(i.value), (v) => v.toFixed(2));
+  bind("rd-n", "n", (i) => Number(i.value));
+  bind("rd-order", "order", (i) => Number(i.value));
+  bind("rd-raw", "raw", (i) => i.checked);
+
+  byId("rd-resample")?.addEventListener("click", () => {
+    state.seed += 1;
+    draw();
+  });
 
   draw();
 
@@ -182,15 +222,4 @@ window.addEventListener("beforeprint", openFolds);
     lastWidth = svg.clientWidth;
     draw();
   }).observe(svg);
-
-  document.getElementById("rd-resample")?.addEventListener("click", () => {
-    seed += 1;
-    draw();
-  });
-
-  // Moving the slider changes the true jump; the random draws stay the same.
-  slider?.addEventListener("input", () => {
-    jump = Number(slider.value);
-    draw();
-  });
 })();

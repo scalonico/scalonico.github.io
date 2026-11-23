@@ -329,21 +329,47 @@ section:first-of-type > .sec,
 }
 
 .rd-controls {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 0.75rem;
+  display: grid;
+  grid-template-columns: max-content minmax(0, 14rem) max-content;
+  gap: 0.45rem 0.75rem;
   align-items: center;
-  margin-top: 0.6rem;
+  margin-top: 0.75rem;
 }
 
 .rd-controls input[type="range"] {
-  flex: 1 1 9rem;
-  max-width: 14rem;
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.rd-controls select {
+  justify-self: start;
+  padding: 0.15rem 0.3rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  color: var(--ink);
+  background: var(--bg);
+  font: inherit;
+}
+
+.rd-controls output {
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.rd-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+}
+
+.rd-actions input {
   accent-color: var(--accent);
 }
 
 .rd button {
-  margin-left: auto;
   padding: 0.3rem 0;
   border: 0;
   color: var(--accent);
@@ -370,6 +396,11 @@ section:first-of-type > .sec,
   fill: var(--muted);
   font-family: var(--sans);
   font-size: 13px;
+}
+
+.rd-raw {
+  fill: var(--muted);
+  fill-opacity: 0.22;
 }
 
 .rd-dot {
